@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kalshi Research Report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Kalshi Research Report</h1>
+</header>
+<div class="center">
+<p><span><strong><span style="color: #663399">Market Research
+Report</span></strong></span></p>
+<p><span>Will Tesla announce a gas car this year?</span></p>
+<p><span>Market Reference:
+<code>https://kalshi.com/markets/kxteslagas/tesla-gas-car/kxteslagas-25</code></span></p>
+</div>
+<h1 id="market-overview">Market Overview</h1>
+<table>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Resolution Criteria:</strong></td>
+<td style="text-align: left;">If Tesla has announced the development of
+an automobile (including cars, trucks, but not a motor cycle, e.g.) that
+can use gasoline to power a combustion engine inside of it that will at
+least partially power the car before Jan 1, 2026, then the market
+resolves to Yes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Expiration:</strong></td>
+<td style="text-align: left;">2025-12-31T15:00:00Z</td>
+</tr>
+</tbody>
+</table>
+<h1 id="market-pricing-vs-independent-estimate">Market Pricing vs
+Independent Estimate</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Outcome</strong></th>
+<th style="text-align: center;"><strong>Market Price</strong></th>
+<th style="text-align: center;"><strong>Independent
+Estimate</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span
+style="color: #228B22">Yes</span></td>
+<td style="text-align: center;">50.0%</td>
+<td style="text-align: center;">2.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+style="color: #B22222">No</span></td>
+<td style="text-align: center;">50.0%</td>
+<td style="text-align: center;">98.0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Confidence Level:</strong> High</p>
+<h1 id="edge-analysis">Edge Analysis</h1>
+<p>Massive edge appears to exist on the ’No’ side. The market’s 50/50
+pricing suggests either: (1) participants don’t understand Tesla’s
+business model, (2) this is a low-information entertainment market, or
+(3) there’s some insider information about a shocking strategic pivot.
+Given Tesla’s $100B+ market cap built on EV leadership and sustainable
+energy mission, a gas car announcement would be corporate suicide. The
+48 percentage point gap is so large it suggests market inefficiency
+rather than hidden information.</p>
+<h1 id="research-summary">Research Summary</h1>
+<p>Tesla’s business model and corporate identity have been fundamentally
+built around electric vehicle technology and sustainable transportation
+since its founding in 2003. The company’s mission statement explicitly
+focuses on ’accelerating the world’s transition to sustainable energy.’
+CEO Elon Musk has repeatedly made strong public statements against
+internal combustion engines, calling them outdated technology and
+emphasizing Tesla’s commitment to electric-only vehicles. Tesla has
+invested billions in electric vehicle infrastructure, including
+Supercharger networks, battery technology (Gigafactories), and electric
+powertrain development. The company’s recent strategic moves continue to
+reinforce this electric-only approach, including partnerships focused on
+charging infrastructure and battery technology. However, the automotive
+industry has seen some companies adopt hybrid strategies or diversify
+their portfolios in response to market conditions, though Tesla has
+shown no indication of such strategic shifts.</p>
+<h2 class="unnumbered" id="sources">Sources</h2>
+<ul>
+<li><p>Tesla official website and mission statement</p></li>
+<li><p>Tesla SEC filings and annual reports (10-K forms)
+2023-2024</p></li>
+<li><p>Tesla earnings call transcripts Q1-Q4 2024</p></li>
+<li><p>Reuters automotive industry coverage 2024</p></li>
+<li><p>Bloomberg Tesla corporate strategy analysis</p></li>
+<li><p>Elon Musk verified social media statements and interviews
+2023-2024</p></li>
+<li><p>Tesla Investor Relations press releases 2024</p></li>
+</ul>
+<h1 id="persona-based-recommendations">Persona-Based
+Recommendations</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Persona</strong></th>
+<th style="text-align: left;"><strong>Position</strong></th>
+<th style="text-align: left;"><strong>Rationale</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Risk Averse</td>
+<td style="text-align: left;">Strong ’No’ position with significant
+allocation</td>
+<td style="text-align: left;">This appears to be one of the
+highest-confidence edges available - Tesla announcing a gas car would
+...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Risk Seeking</td>
+<td style="text-align: left;">Small speculative ’Yes’ position as
+lottery ticket</td>
+<td style="text-align: left;">While the base case strongly favors ’No’,
+the massive mispricing could indicate hidden information o...</td>
+</tr>
+<tr>
+<td style="text-align: left;">News Driven</td>
+<td style="text-align: left;">Wait for catalyst clarity before
+entering</td>
+<td style="text-align: left;">The extreme mispricing suggests either
+hidden information or market dysfunction. News-driven partici...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Macro Thinker</td>
+<td style="text-align: left;">Moderate ’No’ position as EV sector
+hedge</td>
+<td style="text-align: left;">This market reflects broader
+misconceptions about EV transition momentum. A ’No’ position aligns
+wit...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Casual Participant</td>
+<td style="text-align: left;">Simple ’No’ position with entertainment
+value</td>
+<td style="text-align: left;">Easy thesis to remember: Tesla = electric
+cars, period. Elon Musk has built his entire brand on sust...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data Analyst</td>
+<td style="text-align: left;">No position until market mechanics are
+understood</td>
+<td style="text-align: left;">The 48 percentage point gap is
+statistically suspicious and warrants investigation before position
+e...</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="scenario-analysis">Scenario Analysis</h1>
+<h2 class="unnumbered" id="best-case">Best Case</h2>
+<p>Tesla continues its EV-focused strategy without any gas car
+announcements. The company doubles down on its sustainable energy
+mission, potentially announcing new EV models, battery breakthroughs, or
+expanded charging infrastructure. Market gradually corrects to reflect
+the near-impossibility of a gas car announcement, with ’No’ probability
+rising to 95%+.</p>
+<p><strong>Probability Shift:</strong> Market corrects from 50% to 95%+
+for ’No’ outcome as more informed traders enter</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Tesla announces new EV models or battery tech</p></li>
+<li><p>Musk makes strong anti-gas statements</p></li>
+<li><p>Informed traders arbitrage the mispricing</p></li>
+<li><p>Market gains more sophisticated participants</p></li>
+</ul>
+<h2 class="unnumbered" id="worst-case">Worst Case</h2>
+<p>Tesla makes a shocking strategic announcement that involves some form
+of hybrid or gas-powered vehicle, potentially as part of a legacy
+automaker partnership, emergency market response, or completely
+unexpected pivot. This could include acquiring a traditional automaker
+with gas vehicles or announcing a hybrid as a ’bridge technology’
+despite contradicting years of company messaging.</p>
+<p><strong>Probability Shift:</strong> Market was actually correct at
+50%, proving the edge analysis was wrong</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Unexpected Tesla partnership with traditional automaker</p></li>
+<li><p>Major shift in EV market conditions</p></li>
+<li><p>Regulatory changes favoring combustion engines</p></li>
+<li><p>Previously unknown Tesla project revelation</p></li>
+</ul>
+<h2 class="unnumbered" id="most-likely">Most Likely</h2>
+<p>Tesla makes no gas car announcements and continues EV focus, but
+market remains inefficient due to its entertainment/novelty nature.
+Probability stays irrationally close to 50/50 throughout most of the
+year, with only modest correction toward ’No’ as resolution approaches.
+Market efficiency is limited by participant pool and low stakes.</p>
+<p><strong>Probability Shift:</strong> Modest correction to 60-70% for
+’No’ by year-end, but significant mispricing persists</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Continued absence of any gas car hints</p></li>
+<li><p>Tesla’s regular EV-focused announcements</p></li>
+<li><p>Market remains primarily entertainment-focused</p></li>
+<li><p>Limited arbitrage activity due to platform constraints</p></li>
+</ul>
+<h1 class="unnumbered" id="disclaimer">Disclaimer</h1>
+<p><span><em>This research report is for informational purposes only and
+does not constitute financial advice, investment advice, or a
+recommendation to buy or sell any securities or prediction market
+contracts. Prediction markets involve risk of loss. Past performance
+does not guarantee future results. Always do your own research and
+consider your own risk tolerance before participating in any
+market.</em></span></p>
+</body>
+</html>

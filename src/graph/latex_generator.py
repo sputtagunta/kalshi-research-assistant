@@ -30,22 +30,32 @@ def escape_latex(text: str) -> str:
     return text
 
 
+def safe_pct(val) -> str:
+    """Convert a probability value to percentage string, handling strings and floats."""
+    if val is None:
+        return "N/A"
+    try:
+        return f"{float(val) * 100:.1f}"
+    except (ValueError, TypeError):
+        return "N/A"
+
+
 def generate_latex_report(state: KalshiResearchState) -> str:
     """Generate a LaTeX document from research state."""
 
     # Calculate market pricing display
-    yes_odds = next((o for o in state.market_odds if o['outcome'].lower() == 'yes'), None)
-    no_odds = next((o for o in state.market_odds if o['outcome'].lower() == 'no'), None)
+    yes_odds = next((o for o in state.market_odds if o.get('outcome', '').lower() == 'yes'), None)
+    no_odds = next((o for o in state.market_odds if o.get('outcome', '').lower() == 'no'), None)
 
-    yes_pct = f"{yes_odds['implied_probability'] * 100:.1f}" if yes_odds else "N/A"
-    no_pct = f"{no_odds['implied_probability'] * 100:.1f}" if no_odds else "N/A"
+    yes_pct = safe_pct(yes_odds.get('implied_probability')) if yes_odds else "N/A"
+    no_pct = safe_pct(no_odds.get('implied_probability')) if no_odds else "N/A"
 
     # Independent estimates
-    yes_est = next((p for p in state.estimated_probabilities if p['outcome'].lower() == 'yes'), None)
-    no_est = next((p for p in state.estimated_probabilities if p['outcome'].lower() == 'no'), None)
+    yes_est = next((p for p in state.estimated_probabilities if p.get('outcome', '').lower() == 'yes'), None)
+    no_est = next((p for p in state.estimated_probabilities if p.get('outcome', '').lower() == 'no'), None)
 
-    yes_est_pct = f"{yes_est['estimated_probability'] * 100:.1f}" if yes_est else "N/A"
-    no_est_pct = f"{no_est['estimated_probability'] * 100:.1f}" if no_est else "N/A"
+    yes_est_pct = safe_pct(yes_est.get('estimated_probability')) if yes_est else "N/A"
+    no_est_pct = safe_pct(no_est.get('estimated_probability')) if no_est else "N/A"
 
     # Build persona recommendations table rows
     persona_rows = ""

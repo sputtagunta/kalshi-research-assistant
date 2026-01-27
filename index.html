@@ -10,12 +10,10 @@
             --green: #228B22;
             --red: #B22222;
         }
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 40px 20px;
             background: #fafafa;
@@ -30,10 +28,7 @@
             font-size: 2.5em;
             margin-bottom: 10px;
         }
-        .subtitle {
-            color: #666;
-            font-size: 1.1em;
-        }
+        .subtitle { color: #666; font-size: 1.1em; }
         .reports-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -73,6 +68,11 @@
             font-size: 0.8em;
             margin-top: 12px;
         }
+        .tag.politics { background: #e6f0ff; color: #336699; }
+        .tag.tech { background: #e6ffe6; color: #339933; }
+        .tag.health { background: #ffe6e6; color: #993333; }
+        .tag.crypto { background: #fff5e6; color: #996633; }
+        .tag.economics { background: #f5e6ff; color: #663399; }
         footer {
             text-align: center;
             margin-top: 60px;
@@ -81,9 +81,7 @@
             color: #888;
             font-size: 0.9em;
         }
-        footer a {
-            color: var(--purple);
-        }
+        footer a { color: var(--purple); }
     </style>
 </head>
 <body>
@@ -93,22 +91,76 @@
     </header>
 
     <div class="reports-grid">
+        <a href="reports/google-breakup.html" class="report-card">
+            <h2>Google Breakup</h2>
+            <p>Analysis of DOJ antitrust case and likelihood of Google being broken up.</p>
+            <span class="tag politics">Politics</span>
+        </a>
+
+        <a href="reports/new-tariffs.html" class="report-card">
+            <h2>New Tariffs</h2>
+            <p>Will Trump issue executive action on new tariffs?</p>
+            <span class="tag politics">Politics</span>
+        </a>
+
+        <a href="reports/h5n1-cases.html" class="report-card">
+            <h2>H5N1 Bird Flu Cases</h2>
+            <p>Analysis of H5N1 bird flu spread and case count predictions.</p>
+            <span class="tag health">Health</span>
+        </a>
+
+        <a href="reports/panama-canal.html" class="report-card">
+            <h2>Panama Canal</h2>
+            <p>Will the US retake control of the Panama Canal?</p>
+            <span class="tag politics">Politics</span>
+        </a>
+
+        <a href="reports/china-llm.html" class="report-card">
+            <h2>Chinese LLM Leadership</h2>
+            <p>Will a Chinese AI lab produce the best LLM?</p>
+            <span class="tag tech">Technology</span>
+        </a>
+
+        <a href="reports/social-media-ban.html" class="report-card">
+            <h2>Social Media Ban for Kids</h2>
+            <p>Will the US ban social media for children?</p>
+            <span class="tag politics">Politics</span>
+        </a>
+
+        <a href="reports/25th-amendment.html" class="report-card">
+            <h2>25th Amendment</h2>
+            <p>Analysis of 25th Amendment invocation probability.</p>
+            <span class="tag politics">Politics</span>
+        </a>
+
+        <a href="reports/tesla-gas-car.html" class="report-card">
+            <h2>Tesla Gas Car</h2>
+            <p>Will Tesla produce a gas-powered vehicle?</p>
+            <span class="tag tech">Technology</span>
+        </a>
+
+        <a href="reports/kraken-ipo.html" class="report-card">
+            <h2>Kraken IPO</h2>
+            <p>When will Kraken go public?</p>
+            <span class="tag crypto">Crypto</span>
+        </a>
+
         <a href="reports/ai-pause.html" class="report-card">
             <h2>AI Research Pause</h2>
-            <p>Analysis of whether major AI labs will agree to pause frontier AI research.</p>
-            <span class="tag">Technology</span>
+            <p>Will major AI labs pause frontier research for safety?</p>
+            <span class="tag tech">Technology</span>
         </a>
 
         <a href="reports/imf-recession.html" class="report-card">
             <h2>IMF Global Recession</h2>
-            <p>Research on the likelihood of the IMF declaring a global recession.</p>
-            <span class="tag">Economics</span>
+            <p>Will the IMF declare a global recession?</p>
+            <span class="tag economics">Economics</span>
         </a>
 
         <a href="reports/nj-drones.html" class="report-card">
             <h2>NJ Drones</h2>
-            <p>Analysis of the New Jersey drone sightings investigation and explanations.</p>
-            <span class="tag">Politics</span>
+            <p>New Jersey drone sightings investigation.</p>
+            <span class="tag politics">Politics</span>
         </a>
     </div>
 

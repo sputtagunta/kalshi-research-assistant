@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kalshi Research Report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Kalshi Research Report</h1>
+</header>
+<div class="center">
+<p><span><strong><span style="color: #663399">Market Research
+Report</span></strong></span></p>
+<p><span>Will a Chinese AI model be #1 this year?</span></p>
+<p><span>Market Reference:
+<code>https://kalshi.com/markets/kxbestllmchina/chinese-llm-best/kxbestllmchina-26</code></span></p>
+</div>
+<h1 id="market-overview">Market Overview</h1>
+<table>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Resolution Criteria:</strong></td>
+<td style="text-align: left;"><p>If a Chinese LLM is ranked as the
+top-ranked AI model before Jan 1, 2026, then the market resolves to
+Yes.</p>
+<p>Additional terms: The model must be top-ranked, alone, on the Rank
+(UB) metric (unless multiple Chinese models are #1) to resolve the
+market to Yes.</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Expiration:</strong></td>
+<td style="text-align: left;">2026-01-01T15:00:00Z</td>
+</tr>
+</tbody>
+</table>
+<h1 id="market-pricing-vs-independent-estimate">Market Pricing vs
+Independent Estimate</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Outcome</strong></th>
+<th style="text-align: center;"><strong>Market Price</strong></th>
+<th style="text-align: center;"><strong>Independent
+Estimate</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span
+style="color: #228B22">Yes</span></td>
+<td style="text-align: center;">50.0%</td>
+<td style="text-align: center;">25.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+style="color: #B22222">No</span></td>
+<td style="text-align: center;">50.0%</td>
+<td style="text-align: center;">75.0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Confidence Level:</strong> Medium</p>
+<h1 id="edge-analysis">Edge Analysis</h1>
+<p>Significant mispricing appears to exist with market being too
+optimistic about Chinese AI prospects. The 25 percentage point
+difference exceeds typical noise levels and is based on concrete,
+observable factors: export controls on advanced chips, current
+performance rankings, and resource disparities. The ’No’ outcome appears
+meaningfully undervalued at 50% when fundamental constraints suggest 75%
+probability.</p>
+<h1 id="research-summary">Research Summary</h1>
+<p>Chinese AI companies, particularly Alibaba (Qwen series), DeepSeek,
+and Baidu (ERNIE), have made significant advances in large language
+models throughout 2024. Several Chinese models have achieved competitive
+performance on international benchmarks, with some surpassing GPT-4 on
+specific tasks. The key ranking system appears to be the Chatbot Arena
+Leaderboard maintained by UC Berkeley’s LMSYS, which uses the ’Rank
+(UB)’ metric based on human preference evaluations through head-to-head
+comparisons. Currently, the top positions are dominated by OpenAI’s GPT
+models, Anthropic’s Claude, and Google’s Gemini, but Chinese models like
+Qwen2.5-72B-Instruct and DeepSeek-V2.5 have entered the top 20 rankings.
+The competitive landscape is rapidly evolving, with Chinese companies
+investing heavily in AI development and releasing increasingly capable
+models. However, access to advanced chips due to export controls and
+computational resource limitations remain potential constraints for
+Chinese AI development.</p>
+<h2 class="unnumbered" id="sources">Sources</h2>
+<ul>
+<li><p>LMSYS Chatbot Arena Leaderboard - official rankings and
+methodology documentation</p></li>
+<li><p>Alibaba Research papers and technical reports on Qwen model
+series</p></li>
+<li><p>DeepSeek official publications and benchmark results</p></li>
+<li><p>US Commerce Department export control regulations and
+updates</p></li>
+<li><p>CB Insights and PitchBook reports on Chinese AI
+investment</p></li>
+<li><p>Baidu investor relations and technical announcements</p></li>
+<li><p>Academic papers on Chinese LLM development from arXiv and
+conference proceedings</p></li>
+<li><p>Reuters and Bloomberg reporting on US-China AI
+competition</p></li>
+<li><p>Technical blogs and documentation from major AI research
+institutions</p></li>
+</ul>
+<h1 id="persona-based-recommendations">Persona-Based
+Recommendations</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Persona</strong></th>
+<th style="text-align: left;"><strong>Position</strong></th>
+<th style="text-align: left;"><strong>Rationale</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Risk Averse</td>
+<td style="text-align: left;">Moderate position on ’No’ outcome</td>
+<td style="text-align: left;">The 25 percentage point edge represents a
+substantial mispricing based on concrete, observable const...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Risk Seeking</td>
+<td style="text-align: left;">Contrarian ’Yes’ position despite negative
+edge</td>
+<td style="text-align: left;">While the analysis suggests ’Yes’ is
+overpriced, the asymmetric payoff potential from a Chinese brea...</td>
+</tr>
+<tr>
+<td style="text-align: left;">News Driven</td>
+<td style="text-align: left;">Wait-and-see approach with trigger events
+identified</td>
+<td style="text-align: left;">This market will be highly sensitive to
+specific catalysts: chip policy changes, major AI model rele...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Macro Thinker</td>
+<td style="text-align: left;">Hedge position favoring ’No’ while
+considering broader implications</td>
+<td style="text-align: left;">This market correlates with broader
+US-China tech competition themes. A ’No’ position could hedge ex...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Casual Participant</td>
+<td style="text-align: left;">Small ’No’ position based on simple
+thesis</td>
+<td style="text-align: left;">Simple story: China currently ranks 20+
+spots behind in AI, US controls the best chips, and one year...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data Analyst</td>
+<td style="text-align: left;">No position - insufficient data
+quality</td>
+<td style="text-align: left;">While the 25 point edge appears
+significant, several data concerns limit confidence: subjective AI
+m...</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="scenario-analysis">Scenario Analysis</h1>
+<h2 class="unnumbered" id="best-case">Best Case</h2>
+<p>China achieves a major breakthrough in AI efficiency or alternative
+architectures that compensate for chip disadvantages. A Chinese model
+(possibly from Alibaba, Baidu, or ByteDance) leverages unique training
+data, novel architectures, or superior optimization to reach #1 ranking.
+Geopolitical tensions ease slightly, allowing some increased access to
+advanced chips through third parties or domestic production
+improvements.</p>
+<p><strong>Probability Shift:</strong> Market probability moves from 50%
+to 35-40% for Yes outcome</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Major architectural breakthrough announced by Chinese AI
+lab</p></li>
+<li><p>Chinese model jumps 10+ positions in rankings within 3
+months</p></li>
+<li><p>Relaxation of export controls or successful
+circumvention</p></li>
+<li><p>New evaluation methodology favors Chinese model
+strengths</p></li>
+</ul>
+<h2 class="unnumbered" id="worst-case">Worst Case</h2>
+<p>Export controls tighten further, completely cutting off advanced chip
+access. US companies (OpenAI, Anthropic, Google) accelerate development
+with new chip generations, widening the performance gap. Chinese models
+stagnate or fall further behind in rankings. Domestic chip production
+fails to scale meaningfully, and alternative approaches prove
+insufficient to compete at the frontier.</p>
+<p><strong>Probability Shift:</strong> Market probability moves from 50%
+to 10-15% for Yes outcome</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Additional export control restrictions announced</p></li>
+<li><p>US companies release significantly superior models (GPT-5,
+Claude-4)</p></li>
+<li><p>Chinese models drop in rankings over next 6 months</p></li>
+<li><p>TSMC/Samsung compliance becomes stricter</p></li>
+<li><p>Domestic Chinese chip production targets missed</p></li>
+</ul>
+<h2 class="unnumbered" id="most-likely">Most Likely</h2>
+<p>Current trends continue with modest improvements. Chinese models
+gradually improve but remain constrained by hardware limitations. They
+close some gap with international competitors but fall short of #1
+ranking, maintaining positions in top 10-15 range. US/international
+models continue advancing with hardware advantages, keeping Chinese
+efforts competitive but not dominant.</p>
+<p><strong>Probability Shift:</strong> Market probability remains near
+current 50% but fundamentals suggest 25% is more accurate</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Steady but incremental improvements in Chinese model
+performance</p></li>
+<li><p>Rankings show Chinese models in 5-15 range by year-end</p></li>
+<li><p>No major breakthroughs or setbacks in either direction</p></li>
+<li><p>Export controls remain at current levels</p></li>
+<li><p>Continued strong performance from US competitors</p></li>
+</ul>
+<h1 class="unnumbered" id="disclaimer">Disclaimer</h1>
+<p><span><em>This research report is for informational purposes only and
+does not constitute financial advice, investment advice, or a
+recommendation to buy or sell any securities or prediction market
+contracts. Prediction markets involve risk of loss. Past performance
+does not guarantee future results. Always do your own research and
+consider your own risk tolerance before participating in any
+market.</em></span></p>
+</body>
+</html>

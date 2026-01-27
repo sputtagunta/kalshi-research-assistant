@@ -1,0 +1,177 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\geometry{margin=1in}
+
+% Colors
+\definecolor{kalshipurple}{RGB}{102, 51, 153}
+\definecolor{bullgreen}{RGB}{34, 139, 34}
+\definecolor{bearred}{RGB}{178, 34, 34}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{kalshipurple}{Kalshi Research Report}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\small Generated on January 27, 2026}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{kalshipurple}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+% Title
+\begin{center}
+    {\LARGE\bfseries\textcolor{kalshipurple}{Market Research Report}}
+
+    \vspace{0.5cm}
+
+    {\Large US bans social media for children before 2027?}
+
+    \vspace{0.3cm}
+
+    {\small Market Reference: \texttt{https://kalshi.com/markets/kxsocialmediaban/will-the-us-ban-social-media-for-children/kxsocialmediaban-27jan01}}
+\end{center}
+
+\vspace{1cm}
+
+%% ============================================
+\section{Market Overview}
+%% ============================================
+
+\begin{tabular}{@{}ll@{}}
+    \textbf{Resolution Criteria:} & \parbox[t]{10cm}{If legislation banning social media use for children under 18 or any lower age threshold has become law before Jan 1, 2027, then the market resolves to Yes.
+
+Additional terms: A bill that allows parental consent to bypass the ban does not qualify. The bill must pass the full chamber (not just committee) for House or Senate passage. For "become law" markets, the bill must be signed by the President or become law through veto override. Presidential pocket vetoes that expire resolve to No. Joint resolutions are treated as bills. Treaties require two-thirds Senate approval for passage. The market resolves based on the first occurrence of the specified milestone.} \\[0.5em]
+    \textbf{Expiration:} & 2027-01-01T15:00:00Z \\
+\end{tabular}
+
+%% ============================================
+\section{Market Pricing vs Independent Estimate}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{lcc}
+    \toprule
+    \textbf{Outcome} & \textbf{Market Price} & \textbf{Independent Estimate} \\
+    \midrule
+    \textcolor{bullgreen}{Yes} & 8.5\% & 15.0\% \\
+    \textcolor{bearred}{No} & 91.5\% & 85.0\% \\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{Confidence Level:} Medium
+
+%% ============================================
+\section{Edge Analysis}
+%% ============================================
+
+The market appears slightly more confident that a ban won't happen (91.5\% vs 85\%). While both estimates agree on low probability, there's a modest edge on the 'Yes' side if my constitutional law analysis is overly pessimistic. The 6.5 point gap could reflect the market properly pricing in the extreme difficulty of overcoming First Amendment hurdles, or it could underestimate the political pressure for child safety legislation. Given the medium confidence level in my research, this edge is small but potentially real.
+
+%% ============================================
+\section{Research Summary}
+%% ============================================
+
+Current federal legislative activity on social media age restrictions is limited, with most momentum occurring at the state level. The Kids Online Safety Act (KOSA) has bipartisan support in the Senate but does not constitute an outright ban on social media for children - it focuses on platform safety measures and parental controls. Several states have passed or are considering age verification requirements, but these typically require parental consent rather than outright bans. Historical precedent suggests federal legislation restricting youth access to digital platforms faces significant First Amendment challenges and industry opposition. The Supreme Court has consistently struck down broad restrictions on minors' access to information and communication platforms, most notably in Brown v. Entertainment Merchants Association (2011). Current congressional priorities are focused on other issues, and the tech industry maintains substantial lobbying presence against restrictive legislation.
+
+\subsection*{Sources}
+\begin{itemize}
+    \item Senate.gov - Kids Online Safety Act legislative history and voting records
+    \item Library of Congress - THOMAS database for current and proposed federal legislation
+    \item National Conference of State Legislatures - tracking state social media legislation
+    \item Supreme Court decisions on First Amendment and minors' rights (Brown v. EMA, Reno v. ACLU)
+    \item Congressional Research Service reports on internet regulation and children's online safety
+    \item Florida and Utah state government official legislative texts and implementation status
+\end{itemize}
+
+%% ============================================
+\section{Persona-Based Recommendations}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{|p{3cm}|p{3cm}|p{8cm}|}
+    \hline
+    \textbf{Persona} & \textbf{Position} & \textbf{Rationale} \\
+    \hline
+        Risk Averse & No position - edge too small for comfort & The 6.5 percentage point edge on 'Yes' is meaningful but not large enough to justify the constitutio... \\
+        \hline
+        Risk Seeking & Small 'Yes' position for asymmetric payoff & The 11.7x payout (8.5\% to 91.5\% odds) creates an attractive risk-reward profile even with modest edg... \\
+        \hline
+        News Driven & Watch for catalyst timing, consider small 'Yes' position & Child safety legislation tends to move in response to specific incidents or viral stories. News-driv... \\
+        \hline
+        Macro Thinker & Consider 'Yes' as hedge against tech regulation portfolio & This market correlates with broader tech regulation sentiment. If holding positions that benefit fro... \\
+        \hline
+        Casual Participant & Small 'Yes' position - simple thesis with entertainment value & The thesis is straightforward: 'Politicians will eventually do something about kids and social media... \\
+        \hline
+        Data Analyst & No position - insufficient quantitative edge & The 6.5 percentage point difference falls within normal model uncertainty ranges. Without historical... \\
+        \hline
+\end{tabular}
+\end{center}
+
+%% ============================================
+\section{Scenario Analysis}
+%% ============================================
+
+    \subsection*{Best Case}
+    A major social media scandal involving child safety (teen suicide linked to algorithm manipulation, or data breach exposing millions of children) creates overwhelming public pressure. Bipartisan coalition emerges after tech companies resist voluntary measures. Supreme Court signals willingness to narrow First Amendment protections for commercial speech affecting minors. Bill passes with veto-proof majorities after being framed as child protection rather than speech restriction.
+
+    \textbf{Probability Shift:} Market probability could rise to 25-35\% as legislative momentum becomes undeniable and constitutional path clears
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item High-profile child safety incident with clear social media link
+            \item Tech company executives' tone-deaf congressional testimony
+            \item Supreme Court ruling favoring government regulation of commercial speech
+            \item Bipartisan bill introduction with 60+ Senate cosponsors
+    \end{itemize}
+
+    \subsection*{Worst Case}
+    First Amendment challenges mount immediately after any bill introduction. Tech industry launches massive lobbying and legal campaign. Courts issue preliminary injunctions based on precedent. Political focus shifts to other priorities (economy, foreign policy). Any legislative attempts get watered down to parental consent requirements or voluntary industry standards that don't meet market resolution criteria.
+
+    \textbf{Probability Shift:} Market probability drops to 2-5\% as constitutional and political barriers prove insurmountable
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Federal court preliminary injunction on similar state law
+            \item Tech industry spending reaches \$100M+ on lobbying
+            \item Leadership changes prioritize other issues
+            \item Watered-down compromise bills emerge with parental consent loopholes
+    \end{itemize}
+
+    \subsection*{Most Likely}
+    Continued advocacy and state-level experimentation creates pressure, but federal action remains limited. Some bills introduced but face typical legislative gridlock. Constitutional concerns prevent full bans while parental consent compromises don't meet resolution criteria. Issue remains active but doesn't reach the threshold needed for federal legislation to actually become law.
+
+    \textbf{Probability Shift:} Market probability settles around 8-12\%, close to current pricing but with modest upward drift
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item State laws continue passing but face court challenges
+            \item Congressional hearings held but no major bills advance
+            \item Tech companies make voluntary changes that reduce pressure
+            \item Moderate child safety bills introduced with parental consent provisions
+    \end{itemize}
+
+
+%% ============================================
+\section*{Disclaimer}
+%% ============================================
+
+{\small\textit{This research report is for informational purposes only and does not constitute financial advice, investment advice, or a recommendation to buy or sell any securities or prediction market contracts. Prediction markets involve risk of loss. Past performance does not guarantee future results. Always do your own research and consider your own risk tolerance before participating in any market.}}
+
+\end{document}

@@ -1,0 +1,182 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\geometry{margin=1in}
+
+% Colors
+\definecolor{kalshipurple}{RGB}{102, 51, 153}
+\definecolor{bullgreen}{RGB}{34, 139, 34}
+\definecolor{bearred}{RGB}{178, 34, 34}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{kalshipurple}{Kalshi Research Report}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\small Generated on January 27, 2026}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{kalshipurple}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+% Title
+\begin{center}
+    {\LARGE\bfseries\textcolor{kalshipurple}{Market Research Report}}
+
+    \vspace{0.5cm}
+
+    {\Large Will a Chinese AI model be \#1 this year?}
+
+    \vspace{0.3cm}
+
+    {\small Market Reference: \texttt{https://kalshi.com/markets/kxbestllmchina/chinese-llm-best/kxbestllmchina-26}}
+\end{center}
+
+\vspace{1cm}
+
+%% ============================================
+\section{Market Overview}
+%% ============================================
+
+\begin{tabular}{@{}ll@{}}
+    \textbf{Resolution Criteria:} & \parbox[t]{10cm}{If a Chinese LLM is ranked as the top-ranked AI model before Jan 1, 2026, then the market resolves to Yes.
+
+Additional terms: The model must be top-ranked, alone, on the Rank (UB) metric (unless multiple Chinese models are \#1) to resolve the market to Yes.} \\[0.5em]
+    \textbf{Expiration:} & 2026-01-01T15:00:00Z \\
+\end{tabular}
+
+%% ============================================
+\section{Market Pricing vs Independent Estimate}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{lcc}
+    \toprule
+    \textbf{Outcome} & \textbf{Market Price} & \textbf{Independent Estimate} \\
+    \midrule
+    \textcolor{bullgreen}{Yes} & 50.0\% & 25.0\% \\
+    \textcolor{bearred}{No} & 50.0\% & 75.0\% \\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{Confidence Level:} Medium
+
+%% ============================================
+\section{Edge Analysis}
+%% ============================================
+
+Significant mispricing appears to exist with market being too optimistic about Chinese AI prospects. The 25 percentage point difference exceeds typical noise levels and is based on concrete, observable factors: export controls on advanced chips, current performance rankings, and resource disparities. The 'No' outcome appears meaningfully undervalued at 50\% when fundamental constraints suggest 75\% probability.
+
+%% ============================================
+\section{Research Summary}
+%% ============================================
+
+Chinese AI companies, particularly Alibaba (Qwen series), DeepSeek, and Baidu (ERNIE), have made significant advances in large language models throughout 2024. Several Chinese models have achieved competitive performance on international benchmarks, with some surpassing GPT-4 on specific tasks. The key ranking system appears to be the Chatbot Arena Leaderboard maintained by UC Berkeley's LMSYS, which uses the 'Rank (UB)' metric based on human preference evaluations through head-to-head comparisons. Currently, the top positions are dominated by OpenAI's GPT models, Anthropic's Claude, and Google's Gemini, but Chinese models like Qwen2.5-72B-Instruct and DeepSeek-V2.5 have entered the top 20 rankings. The competitive landscape is rapidly evolving, with Chinese companies investing heavily in AI development and releasing increasingly capable models. However, access to advanced chips due to export controls and computational resource limitations remain potential constraints for Chinese AI development.
+
+\subsection*{Sources}
+\begin{itemize}
+    \item LMSYS Chatbot Arena Leaderboard - official rankings and methodology documentation
+    \item Alibaba Research papers and technical reports on Qwen model series
+    \item DeepSeek official publications and benchmark results
+    \item US Commerce Department export control regulations and updates
+    \item CB Insights and PitchBook reports on Chinese AI investment
+    \item Baidu investor relations and technical announcements
+    \item Academic papers on Chinese LLM development from arXiv and conference proceedings
+    \item Reuters and Bloomberg reporting on US-China AI competition
+    \item Technical blogs and documentation from major AI research institutions
+\end{itemize}
+
+%% ============================================
+\section{Persona-Based Recommendations}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{|p{3cm}|p{3cm}|p{8cm}|}
+    \hline
+    \textbf{Persona} & \textbf{Position} & \textbf{Rationale} \\
+    \hline
+        Risk Averse & Moderate position on 'No' outcome & The 25 percentage point edge represents a substantial mispricing based on concrete, observable const... \\
+        \hline
+        Risk Seeking & Contrarian 'Yes' position despite negative edge & While the analysis suggests 'Yes' is overpriced, the asymmetric payoff potential from a Chinese brea... \\
+        \hline
+        News Driven & Wait-and-see approach with trigger events identified & This market will be highly sensitive to specific catalysts: chip policy changes, major AI model rele... \\
+        \hline
+        Macro Thinker & Hedge position favoring 'No' while considering broader implications & This market correlates with broader US-China tech competition themes. A 'No' position could hedge ex... \\
+        \hline
+        Casual Participant & Small 'No' position based on simple thesis & Simple story: China currently ranks 20+ spots behind in AI, US controls the best chips, and one year... \\
+        \hline
+        Data Analyst & No position - insufficient data quality & While the 25 point edge appears significant, several data concerns limit confidence: subjective AI m... \\
+        \hline
+\end{tabular}
+\end{center}
+
+%% ============================================
+\section{Scenario Analysis}
+%% ============================================
+
+    \subsection*{Best Case}
+    China achieves a major breakthrough in AI efficiency or alternative architectures that compensate for chip disadvantages. A Chinese model (possibly from Alibaba, Baidu, or ByteDance) leverages unique training data, novel architectures, or superior optimization to reach \#1 ranking. Geopolitical tensions ease slightly, allowing some increased access to advanced chips through third parties or domestic production improvements.
+
+    \textbf{Probability Shift:} Market probability moves from 50\% to 35-40\% for Yes outcome
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Major architectural breakthrough announced by Chinese AI lab
+            \item Chinese model jumps 10+ positions in rankings within 3 months
+            \item Relaxation of export controls or successful circumvention
+            \item New evaluation methodology favors Chinese model strengths
+    \end{itemize}
+
+    \subsection*{Worst Case}
+    Export controls tighten further, completely cutting off advanced chip access. US companies (OpenAI, Anthropic, Google) accelerate development with new chip generations, widening the performance gap. Chinese models stagnate or fall further behind in rankings. Domestic chip production fails to scale meaningfully, and alternative approaches prove insufficient to compete at the frontier.
+
+    \textbf{Probability Shift:} Market probability moves from 50\% to 10-15\% for Yes outcome
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Additional export control restrictions announced
+            \item US companies release significantly superior models (GPT-5, Claude-4)
+            \item Chinese models drop in rankings over next 6 months
+            \item TSMC/Samsung compliance becomes stricter
+            \item Domestic Chinese chip production targets missed
+    \end{itemize}
+
+    \subsection*{Most Likely}
+    Current trends continue with modest improvements. Chinese models gradually improve but remain constrained by hardware limitations. They close some gap with international competitors but fall short of \#1 ranking, maintaining positions in top 10-15 range. US/international models continue advancing with hardware advantages, keeping Chinese efforts competitive but not dominant.
+
+    \textbf{Probability Shift:} Market probability remains near current 50\% but fundamentals suggest 25\% is more accurate
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Steady but incremental improvements in Chinese model performance
+            \item Rankings show Chinese models in 5-15 range by year-end
+            \item No major breakthroughs or setbacks in either direction
+            \item Export controls remain at current levels
+            \item Continued strong performance from US competitors
+    \end{itemize}
+
+
+%% ============================================
+\section*{Disclaimer}
+%% ============================================
+
+{\small\textit{This research report is for informational purposes only and does not constitute financial advice, investment advice, or a recommendation to buy or sell any securities or prediction market contracts. Prediction markets involve risk of loss. Past performance does not guarantee future results. Always do your own research and consider your own risk tolerance before participating in any market.}}
+
+\end{document}
