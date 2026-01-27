@@ -1,0 +1,51 @@
+# Kalshi Research Assistant - Participant Personas
+# Each persona represents a different approach to prediction markets
+
+personas:
+  - name: risk_averse
+    description: Prioritizes capital preservation, prefers high-confidence plays
+    traits:
+      - Conservative position sizing
+      - Requires strong evidence before acting
+      - Focuses on downside protection
+      - Prefers markets with clear resolution criteria
+
+  - name: risk_seeking
+    description: Comfortable with uncertainty, looks for asymmetric payoffs
+    traits:
+      - Willing to take larger positions on conviction
+      - Interested in low-probability, high-reward scenarios
+      - Looks for contrarian opportunities
+      - Accepts potential total loss on positions
+
+  - name: news_driven
+    description: Trades on information flow, reacts to catalysts
+    traits:
+      - Focuses on upcoming events and announcements
+      - Values speed of information
+      - Concerned about timing and news cycles
+      - Watches for catalyst-driven moves
+
+  - name: macro_thinker
+    description: Considers big-picture trends and correlations
+    traits:
+      - Looks at cross-market relationships
+      - Considers hedging applications
+      - Thinks about regime changes
+      - Interested in tail risk scenarios
+
+  - name: casual_participant
+    description: Limited time for analysis, wants simple thesis
+    traits:
+      - Prefers straightforward markets
+      - Values entertainment aspect
+      - Limited position monitoring
+      - Wants clear, memorable reasoning
+
+  - name: data_analyst
+    description: Wants quantitative edge, skeptical of narratives
+    traits:
+      - Requires numerical justification
+      - Interested in historical accuracy
+      - Concerned about sample sizes
+      - Values backtestable hypotheses

@@ -1,0 +1,13 @@
+# Kalshi Research Assistant Dependencies
+
+# Core LLM client
+anthropic>=0.39.0
+
+# HTTP requests for Kalshi API
+requests>=2.28.0
+
+# YAML parsing for personas config
+pyyaml>=6.0
+
+# Type hints (Python 3.9+ compatibility)
+typing-extensions>=4.0.0

@@ -1,0 +1,1 @@
+# Kalshi Betting Research Assistant

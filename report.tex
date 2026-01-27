@@ -1,0 +1,177 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\geometry{margin=1in}
+
+% Colors
+\definecolor{kalshipurple}{RGB}{102, 51, 153}
+\definecolor{bullgreen}{RGB}{34, 139, 34}
+\definecolor{bearred}{RGB}{178, 34, 34}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{kalshipurple}{Kalshi Research Report}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\small Generated on January 26, 2026}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{kalshipurple}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+% Title
+\begin{center}
+    {\LARGE\bfseries\textcolor{kalshipurple}{Market Research Report}}
+
+    \vspace{0.5cm}
+
+    {\Large Will India meet its climate goals?}
+
+    \vspace{0.3cm}
+
+    {\small Market Reference: \texttt{https://kalshi.com/markets/kxindiaclimate/india-climate-goals/indiaclimate-30}}
+\end{center}
+
+\vspace{1cm}
+
+%% ============================================
+\section{Market Overview}
+%% ============================================
+
+\begin{tabular}{@{}ll@{}}
+    \textbf{Resolution Criteria:} & \parbox[t]{10cm}{If India has reduced the emission intensity of its GDP by 45\% relative to the 2005 level by 2030, then the market resolves to Yes.} \\[0.5em]
+    \textbf{Expiration:} & 2031-12-31T15:00:00Z \\
+\end{tabular}
+
+%% ============================================
+\section{Market Pricing vs Independent Estimate}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{lcc}
+    \toprule
+    \textbf{Outcome} & \textbf{Market Price} & \textbf{Independent Estimate} \\
+    \midrule
+    \textcolor{bullgreen}{Yes} & 73.5\% & 75.0\% \\
+    \textcolor{bearred}{No} & 26.5\% & 25.0\% \\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{Confidence Level:} Medium
+
+%% ============================================
+\section{Edge Analysis}
+%% ============================================
+
+No meaningful edge exists here. The market appears to have incorporated similar information and reasoning as the independent analysis. Both recognize India's strong progress to date (33\% reduction achieved) while accounting for remaining challenges around coal dependence and policy execution. The convergence suggests either: 1) this is a well-analyzed, efficient market, or 2) the independent analysis is drawing from widely available information that's already reflected in prices.
+
+%% ============================================
+\section{Research Summary}
+%% ============================================
+
+India committed to reducing the emission intensity of its GDP by 45\% from 2005 levels by 2030 as part of its Nationally Determined Contributions (NDCs) under the Paris Agreement. According to official government data, India has already achieved significant progress - the Ministry of Environment reported in 2023 that emission intensity had decreased by approximately 33\% between 2005 and 2019. This puts India roughly two-thirds of the way to its 2030 target with over a decade of progress already recorded. India's approach focuses on increasing renewable energy capacity (targeting 500 GW by 2030), improving energy efficiency, and expanding forest cover. The country has made substantial investments in solar and wind power, with renewable capacity growing rapidly. However, challenges remain including continued economic growth that increases absolute emissions, heavy reliance on coal for electricity generation, and the need for sustained policy implementation across multiple sectors. The emission intensity metric is crucial here - it measures emissions relative to economic output, meaning India can still increase total emissions while meeting this target if GDP grows faster than emissions.
+
+\subsection*{Sources}
+\begin{itemize}
+    \item India's Third Biennial Update Report to UNFCCC (2021) - official government reporting on emissions
+    \item Ministry of Environment, Forest and Climate Change annual reports and statements
+    \item Central Electricity Authority of India - power sector data and statistics
+    \item International Energy Agency India Energy Outlook reports
+    \item World Bank economic data on India's GDP growth
+    \item Forest Survey of India biennial reports on forest cover
+    \item Global Carbon Atlas - emissions data compilation
+    \item India's updated Nationally Determined Contributions (NDC) submitted to UNFCCC in 2022
+\end{itemize}
+
+%% ============================================
+\section{Persona-Based Recommendations}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{|p{3cm}|p{3cm}|p{8cm}|}
+    \hline
+    \textbf{Persona} & \textbf{Position} & \textbf{Rationale} \\
+    \hline
+        Risk Averse & No position - stay away & With no meaningful edge and efficient pricing, this represents a coin flip with transaction costs. R... \\
+        \hline
+        Risk Seeking & Small position on either side for engagement & Even without an edge, risk-seeking participants might find value in staying engaged with climate mar... \\
+        \hline
+        News Driven & Watch and wait for catalyst & The current efficient pricing suggests waiting for new information that could create temporary mispr... \\
+        \hline
+        Macro Thinker & Consider as hedge component rather than standalone bet & While the market shows no edge, India's climate performance correlates with global energy transition... \\
+        \hline
+        Casual Participant & Skip this market entirely & With no clear edge and complex factors to monitor over a long timeframe, casual participants would b... \\
+        \hline
+        Data Analyst & Use as calibration benchmark & The convergence between market pricing and independent analysis provides valuable calibration data. ... \\
+        \hline
+\end{tabular}
+\end{center}
+
+%% ============================================
+\section{Scenario Analysis}
+%% ============================================
+
+    \subsection*{Best Case}
+    India accelerates renewable energy deployment beyond current targets, with solar and wind costs continuing to decline rapidly. Economic growth shifts toward less energy-intensive services and high-tech manufacturing. Coal plant retirements accelerate due to economic unviability. State governments implement aggressive energy efficiency programs. International climate finance flows increase substantially, funding clean technology adoption.
+
+    \textbf{Probability Shift:} Yes probability increases to 85-90\%. Market currently underprices the momentum effect of India's renewable energy success and potential for faster-than-expected coal phase-down.
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Annual renewable capacity additions exceed 50 GW
+            \item Major coal plants announce early retirement schedules
+            \item GDP growth maintains 6\%+ while emissions plateau
+            \item International climate finance deals above \$10B annually
+    \end{itemize}
+
+    \subsection*{Worst Case}
+    Economic growth prioritizes heavy industry and manufacturing, increasing energy intensity. Coal demand remains sticky due to energy security concerns and grid stability needs. Renewable deployment faces land acquisition issues, grid integration challenges, and policy reversals at state level. Global supply chain disruptions slow clean technology adoption. Extreme weather events increase energy demand for cooling.
+
+    \textbf{Probability Shift:} Yes probability falls to 50-55\%. Current market pricing may be too optimistic about execution risks and structural economic constraints.
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Annual renewable additions fall below 25 GW for two consecutive years
+            \item Coal consumption increases year-over-year
+            \item Major renewable projects face significant delays or cancellations
+            \item Energy intensity starts rising again in official statistics
+    \end{itemize}
+
+    \subsection*{Most Likely}
+    India maintains steady but unspectacular progress toward its climate goals. Renewable energy deployment continues at current pace with modest acceleration. Coal use plateaus and begins gradual decline by 2027-2028. Economic growth shifts incrementally toward services. Some policy implementation challenges but overall commitment remains strong. Target achieved with minimal margin by 2030.
+
+    \textbf{Probability Shift:} Yes probability remains 70-75\%. Current market pricing reflects this balanced view of continued progress with manageable headwinds.
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Renewable capacity additions stay in 35-45 GW annual range
+            \item GDP emission intensity declines 3-4\% annually
+            \item Coal consumption peaks by 2027-2028
+            \item No major policy reversals but some implementation delays
+    \end{itemize}
+
+
+%% ============================================
+\section*{Disclaimer}
+%% ============================================
+
+{\small\textit{This research report is for informational purposes only and does not constitute financial advice, investment advice, or a recommendation to buy or sell any securities or prediction market contracts. Prediction markets involve risk of loss. Past performance does not guarantee future results. Always do your own research and consider your own risk tolerance before participating in any market.}}
+
+\end{document}
