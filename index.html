@@ -5,81 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalshi Research Reports</title>
     <style>
-        :root {
-            --purple: #663399;
-            --green: #228B22;
-            --red: #B22222;
-        }
+        :root { --purple: #663399; --green: #228B22; --red: #B22222; }
         * { box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            max-width: 1100px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
             background: #fafafa;
             color: #1a1a1a;
         }
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        h1 {
-            color: var(--purple);
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: var(--purple); font-size: 2.5em; margin-bottom: 10px; }
         .subtitle { color: #666; font-size: 1.1em; }
+        .stats { margin: 20px 0; color: #888; }
         .reports-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 16px;
         }
         .report-card {
             background: white;
-            border-radius: 12px;
-            padding: 24px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
             transition: transform 0.2s, box-shadow 0.2s;
             text-decoration: none;
             color: inherit;
             display: block;
         }
         .report-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(102, 51, 153, 0.15);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 51, 153, 0.12);
         }
-        .report-card h2 {
-            color: var(--purple);
-            font-size: 1.2em;
-            margin: 0 0 12px 0;
-        }
-        .report-card p {
-            color: #666;
-            font-size: 0.95em;
-            margin: 0;
-            line-height: 1.5;
-        }
+        .report-card h2 { color: var(--purple); font-size: 1.1em; margin: 0 0 8px 0; }
+        .report-card p { color: #666; font-size: 0.9em; margin: 0; line-height: 1.4; }
         .tag {
             display: inline-block;
-            background: #f0e6ff;
-            color: var(--purple);
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.8em;
-            margin-top: 12px;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            margin-top: 10px;
         }
         .tag.politics { background: #e6f0ff; color: #336699; }
         .tag.tech { background: #e6ffe6; color: #339933; }
         .tag.health { background: #ffe6e6; color: #993333; }
         .tag.crypto { background: #fff5e6; color: #996633; }
         .tag.economics { background: #f5e6ff; color: #663399; }
+        .tag.intl { background: #e6ffff; color: #339999; }
         footer {
             text-align: center;
-            margin-top: 60px;
+            margin-top: 50px;
             padding-top: 20px;
             border-top: 1px solid #eee;
             color: #888;
-            font-size: 0.9em;
+            font-size: 0.85em;
         }
         footer a { color: var(--purple); }
     </style>
@@ -88,79 +68,114 @@
     <header>
         <h1>Kalshi Research Reports</h1>
         <p class="subtitle">AI-powered analysis of prediction markets</p>
+        <p class="stats">21 reports available</p>
     </header>
 
     <div class="reports-grid">
         <a href="reports/google-breakup.html" class="report-card">
             <h2>Google Breakup</h2>
-            <p>Analysis of DOJ antitrust case and likelihood of Google being broken up.</p>
+            <p>DOJ antitrust case and breakup likelihood</p>
             <span class="tag politics">Politics</span>
         </a>
-
         <a href="reports/new-tariffs.html" class="report-card">
             <h2>New Tariffs</h2>
-            <p>Will Trump issue executive action on new tariffs?</p>
+            <p>Trump executive action on tariffs</p>
             <span class="tag politics">Politics</span>
         </a>
-
         <a href="reports/h5n1-cases.html" class="report-card">
-            <h2>H5N1 Bird Flu Cases</h2>
-            <p>Analysis of H5N1 bird flu spread and case count predictions.</p>
+            <h2>H5N1 Bird Flu</h2>
+            <p>Bird flu spread and case predictions</p>
             <span class="tag health">Health</span>
         </a>
-
         <a href="reports/panama-canal.html" class="report-card">
             <h2>Panama Canal</h2>
-            <p>Will the US retake control of the Panama Canal?</p>
-            <span class="tag politics">Politics</span>
+            <p>US retaking control of canal</p>
+            <span class="tag intl">International</span>
         </a>
-
         <a href="reports/china-llm.html" class="report-card">
-            <h2>Chinese LLM Leadership</h2>
-            <p>Will a Chinese AI lab produce the best LLM?</p>
+            <h2>Chinese LLM</h2>
+            <p>Chinese AI lab producing best LLM</p>
             <span class="tag tech">Technology</span>
         </a>
-
         <a href="reports/social-media-ban.html" class="report-card">
-            <h2>Social Media Ban for Kids</h2>
-            <p>Will the US ban social media for children?</p>
+            <h2>Social Media Ban</h2>
+            <p>US banning social media for children</p>
             <span class="tag politics">Politics</span>
         </a>
-
         <a href="reports/25th-amendment.html" class="report-card">
             <h2>25th Amendment</h2>
-            <p>Analysis of 25th Amendment invocation probability.</p>
+            <p>Presidential removal probability</p>
             <span class="tag politics">Politics</span>
         </a>
-
         <a href="reports/tesla-gas-car.html" class="report-card">
             <h2>Tesla Gas Car</h2>
-            <p>Will Tesla produce a gas-powered vehicle?</p>
+            <p>Tesla producing gas-powered vehicle</p>
             <span class="tag tech">Technology</span>
         </a>
-
         <a href="reports/kraken-ipo.html" class="report-card">
             <h2>Kraken IPO</h2>
-            <p>When will Kraken go public?</p>
+            <p>Kraken crypto exchange going public</p>
             <span class="tag crypto">Crypto</span>
         </a>
-
         <a href="reports/ai-pause.html" class="report-card">
             <h2>AI Research Pause</h2>
-            <p>Will major AI labs pause frontier research for safety?</p>
+            <p>Major AI labs pausing for safety</p>
             <span class="tag tech">Technology</span>
         </a>
-
         <a href="reports/imf-recession.html" class="report-card">
-            <h2>IMF Global Recession</h2>
-            <p>Will the IMF declare a global recession?</p>
+            <h2>IMF Recession</h2>
+            <p>IMF declaring global recession</p>
             <span class="tag economics">Economics</span>
         </a>
-
         <a href="reports/nj-drones.html" class="report-card">
             <h2>NJ Drones</h2>
-            <p>New Jersey drone sightings investigation.</p>
+            <p>New Jersey drone sightings</p>
             <span class="tag politics">Politics</span>
+        </a>
+        <a href="reports/nber-recession.html" class="report-card">
+            <h2>NBER Recession</h2>
+            <p>US recession declaration by NBER</p>
+            <span class="tag economics">Economics</span>
+        </a>
+        <a href="reports/meta-ceo.html" class="report-card">
+            <h2>Meta CEO</h2>
+            <p>Zuckerberg leaving Meta</p>
+            <span class="tag tech">Technology</span>
+        </a>
+        <a href="reports/credit-rating.html" class="report-card">
+            <h2>US Credit Rating</h2>
+            <p>US credit rating downgrade</p>
+            <span class="tag economics">Economics</span>
+        </a>
+        <a href="reports/daylight-savings.html" class="report-card">
+            <h2>Daylight Savings</h2>
+            <p>Permanent daylight savings time</p>
+            <span class="tag politics">Politics</span>
+        </a>
+        <a href="reports/aca-repeal.html" class="report-card">
+            <h2>ACA Repeal</h2>
+            <p>Obamacare repeal probability</p>
+            <span class="tag politics">Politics</span>
+        </a>
+        <a href="reports/usps-privatize.html" class="report-card">
+            <h2>USPS Privatization</h2>
+            <p>Privatizing US Postal Service</p>
+            <span class="tag politics">Politics</span>
+        </a>
+        <a href="reports/us-default.html" class="report-card">
+            <h2>US Default</h2>
+            <p>US government default on debt</p>
+            <span class="tag economics">Economics</span>
+        </a>
+        <a href="reports/palestine-recognition.html" class="report-card">
+            <h2>Palestine Recognition</h2>
+            <p>US recognizing Palestinian state</p>
+            <span class="tag intl">International</span>
+        </a>
+        <a href="reports/abraham-accords-saudi.html" class="report-card">
+            <h2>Abraham Accords Saudi</h2>
+            <p>Saudi Arabia joining Abraham Accords</p>
+            <span class="tag intl">International</span>
         </a>
     </div>
 

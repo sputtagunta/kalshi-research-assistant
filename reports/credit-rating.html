@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kalshi Research Report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Kalshi Research Report</h1>
+</header>
+<div class="center">
+<p><span><strong><span style="color: #663399">Market Research
+Report</span></strong></span></p>
+<p><span>Will the U.S. credit rating be downgraded by December 31,
+2025?</span></p>
+<p><span>Market Reference:
+<code>https://kalshi.com/markets/kxcreditrating/us-credit-rating-downgrade/kxcreditrating-25dec31b</code></span></p>
+</div>
+<h1 id="market-overview">Market Overview</h1>
+<table>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Resolution Criteria:</strong></td>
+<td style="text-align: left;">If U.S. credit is downgraded by any of the
+three major credit ratings agencies beginning May 21, 2025 and by
+December 31, 2025, then the market resolves to Yes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Expiration:</strong></td>
+<td style="text-align: left;">2026-01-01T15:00:00Z</td>
+</tr>
+</tbody>
+</table>
+<h1 id="market-pricing-vs-independent-estimate">Market Pricing vs
+Independent Estimate</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Outcome</strong></th>
+<th style="text-align: center;"><strong>Market Price</strong></th>
+<th style="text-align: center;"><strong>Independent
+Estimate</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span
+style="color: #228B22">Yes</span></td>
+<td style="text-align: center;">50.0%</td>
+<td style="text-align: center;">35.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+style="color: #B22222">No</span></td>
+<td style="text-align: center;">50.0%</td>
+<td style="text-align: center;">65.0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Confidence Level:</strong> Medium</p>
+<h1 id="edge-analysis">Edge Analysis</h1>
+<p>A potential edge exists in fading the ’Yes’ outcome (downgrade) at
+50% implied probability. The 15 percentage point difference suggests the
+market may be overly pessimistic, possibly influenced by recent media
+coverage of fiscal issues and the fresh memory of Fitch’s 2023
+downgrade. The analysis suggests downgrade probability is closer to 35%,
+making the current 50% pricing attractive to fade. However, this edge
+assumes our fundamental analysis correctly weighs the competing
+factors.</p>
+<h1 id="research-summary">Research Summary</h1>
+<p>The U.S. currently holds AAA ratings from Moody’s and Fitch, while
+S&amp;P rates it AA+ (downgraded in 2011). Recent debt ceiling
+negotiations and rising debt levels have prompted warnings from rating
+agencies. Moody’s changed its outlook to negative in November 2023,
+citing fiscal deficits and political polarization. Fitch had previously
+placed the U.S. on negative watch in May 2023 before downgrading in
+August 2023. Key factors include the debt-to-GDP ratio (currently around
+120%), ongoing fiscal deficits projected at 5-7% of GDP, and political
+challenges in addressing fiscal sustainability. Historical precedent
+exists with S&amp;P’s 2011 downgrade following debt ceiling
+brinkmanship. The timeline from May 2025 onwards coincides with
+potential debt ceiling discussions and fiscal policy debates.</p>
+<h2 class="unnumbered" id="sources">Sources</h2>
+<ul>
+<li><p>Moody’s Investors Service - U.S. sovereign rating reports and
+outlook changes</p></li>
+<li><p>Fitch Ratings - U.S. sovereign credit analysis and rating
+history</p></li>
+<li><p>S&amp;P Global Ratings - Historical U.S. sovereign rating
+decisions and methodology</p></li>
+<li><p>Congressional Budget Office - Budget and economic outlook reports
+2023-2024</p></li>
+<li><p>U.S. Treasury - Debt statistics and fiscal data</p></li>
+<li><p>Federal Reserve - Economic projections and monetary policy
+statements</p></li>
+<li><p>Government Accountability Office - Fiscal outlook
+reports</p></li>
+<li><p>Reuters, Bloomberg, Wall Street Journal - Recent coverage of
+rating agency statements</p></li>
+</ul>
+<h1 id="persona-based-recommendations">Persona-Based
+Recommendations</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Persona</strong></th>
+<th style="text-align: left;"><strong>Position</strong></th>
+<th style="text-align: left;"><strong>Rationale</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Risk Averse</td>
+<td style="text-align: left;">No position - wait for better pricing</td>
+<td style="text-align: left;">While the ’No’ outcome appears
+underpriced, the 15% edge may not provide sufficient cushion given
+th...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Risk Seeking</td>
+<td style="text-align: left;">Small ’Yes’ contrarian bet despite
+overpricing</td>
+<td style="text-align: left;">A risk-seeking participant might actually
+consider the overpriced ’Yes’ outcome for its asymmetric p...</td>
+</tr>
+<tr>
+<td style="text-align: left;">News Driven</td>
+<td style="text-align: left;">Monitor but delay entry pending
+catalysts</td>
+<td style="text-align: left;">This persona would likely want to wait for
+specific catalysts rather than betting on current pricing...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Macro Thinker</td>
+<td style="text-align: left;">’No’ position as part of broader U.S.
+stability thesis</td>
+<td style="text-align: left;">This aligns with a broader view that U.S.
+institutional strength remains intact despite fiscal conce...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Casual Participant</td>
+<td style="text-align: left;">’No’ - bet on America staying strong</td>
+<td style="text-align: left;">Simple, memorable thesis: ’America has
+been through worse and maintained its credit rating.’ Easy to...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data Analyst</td>
+<td style="text-align: left;">No position - insufficient quantitative
+edge</td>
+<td style="text-align: left;">The 15% edge calculation relies heavily on
+qualitative assessment of ’institutional inertia’ and ’st...</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="scenario-analysis">Scenario Analysis</h1>
+<h2 class="unnumbered" id="best-case">Best Case</h2>
+<p>Economic growth accelerates due to productivity gains from AI
+adoption, significantly improving debt-to-GDP trajectory. Bipartisan
+fiscal reforms emerge after 2024 elections, including modest entitlement
+adjustments and revenue enhancements. Rating agencies explicitly
+acknowledge improved fiscal outlook and economic fundamentals, with no
+downgrade discussions. Market probability drops to 20-25%.</p>
+<p><strong>Probability Shift:</strong> Downgrade probability falls to
+20-25% as fiscal trajectory improves and political dysfunction
+decreases</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>GDP growth consistently above 3% through 2025</p></li>
+<li><p>Bipartisan budget deal with meaningful deficit reduction</p></li>
+<li><p>Rating agencies issue positive outlook statements</p></li>
+<li><p>Debt-to-GDP ratio stabilizes or begins declining</p></li>
+</ul>
+<h2 class="unnumbered" id="worst-case">Worst Case</h2>
+<p>Debt ceiling crisis in 2025 creates prolonged political brinksmanship
+with technical default risk. Economic recession emerges, worsening
+fiscal metrics while political gridlock prevents any meaningful reforms.
+One rating agency downgrades preemptively, creating pressure on others
+to follow. Geopolitical tensions strain dollar’s reserve currency
+status. Market probability rises to 70-75%.</p>
+<p><strong>Probability Shift:</strong> Downgrade probability rises to
+70-75% as political dysfunction peaks and fiscal metrics deteriorate
+rapidly</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Extended debt ceiling standoff lasting over 30 days</p></li>
+<li><p>U.S. enters recession with 2+ consecutive quarters of negative
+growth</p></li>
+<li><p>One major rating agency downgrades, creating precedent</p></li>
+<li><p>Significant decline in Treasury auction demand</p></li>
+<li><p>Federal interest expense exceeds 20% of revenues</p></li>
+</ul>
+<h2 class="unnumbered" id="most-likely">Most Likely</h2>
+<p>Status quo continues with modest economic growth and persistent but
+manageable fiscal challenges. Debt ceiling gets raised after typical
+political theater but no actual default risk. Rating agencies maintain
+current ratings but issue cautionary language about long-term fiscal
+trajectory. No major reforms but no crisis either - the familiar pattern
+of ’muddling through’ continues. Market probability stays near current
+levels or drifts slightly lower.</p>
+<p><strong>Probability Shift:</strong> Downgrade probability remains
+35-45% as fundamental conditions persist without major positive or
+negative catalysts</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Debt ceiling resolved within 2-4 weeks of deadline</p></li>
+<li><p>GDP growth remains 2-2.5% range</p></li>
+<li><p>Rating agencies issue routine reviews with mixed
+language</p></li>
+<li><p>Federal deficit stays in $1.5-2T range</p></li>
+<li><p>Political landscape remains polarized but functional</p></li>
+</ul>
+<h1 class="unnumbered" id="disclaimer">Disclaimer</h1>
+<p><span><em>This research report is for informational purposes only and
+does not constitute financial advice, investment advice, or a
+recommendation to buy or sell any securities or prediction market
+contracts. Prediction markets involve risk of loss. Past performance
+does not guarantee future results. Always do your own research and
+consider your own risk tolerance before participating in any
+market.</em></span></p>
+</body>
+</html>

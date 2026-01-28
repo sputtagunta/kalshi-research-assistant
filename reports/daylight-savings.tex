@@ -1,0 +1,180 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\geometry{margin=1in}
+
+% Colors
+\definecolor{kalshipurple}{RGB}{102, 51, 153}
+\definecolor{bullgreen}{RGB}{34, 139, 34}
+\definecolor{bearred}{RGB}{178, 34, 34}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{kalshipurple}{Kalshi Research Report}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\small Generated on January 27, 2026}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{kalshipurple}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+% Title
+\begin{center}
+    {\LARGE\bfseries\textcolor{kalshipurple}{Market Research Report}}
+
+    \vspace{0.5cm}
+
+    {\Large Will permanent daylight savings become law before Jan 1, 2027?}
+
+    \vspace{0.3cm}
+
+    {\small Market Reference: \texttt{https://kalshi.com/markets/kxdst/will-daylight-savings-become-permanent/kxdst-27jan01}}
+\end{center}
+
+\vspace{1cm}
+
+%% ============================================
+\section{Market Overview}
+%% ============================================
+
+\begin{tabular}{@{}ll@{}}
+    \textbf{Resolution Criteria:} & \parbox[t]{10cm}{If legislation establishing permanent Daylight Saving Time has become law before Jan 1, 2027, then the market resolves to Yes.
+
+Additional terms: The bill must pass the full chamber (not just committee) for House or Senate passage. For "become law" markets, the bill must be signed by the President or become law through veto override. Presidential pocket vetoes that expire resolve to No. Joint resolutions are treated as bills. Treaties require two-thirds Senate approval for passage. The market resolves based on the first occurrence of the specified milestone.} \\[0.5em]
+    \textbf{Expiration:} & 2027-01-01T15:00:00Z \\
+\end{tabular}
+
+%% ============================================
+\section{Market Pricing vs Independent Estimate}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{lcc}
+    \toprule
+    \textbf{Outcome} & \textbf{Market Price} & \textbf{Independent Estimate} \\
+    \midrule
+    \textcolor{bullgreen}{Yes} & 11.5\% & 25.0\% \\
+    \textcolor{bearred}{No} & 88.5\% & 75.0\% \\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{Confidence Level:} Medium
+
+%% ============================================
+\section{Edge Analysis}
+%% ============================================
+
+The market appears significantly more bearish than my analysis warrants. While both assessments favor 'No', the market's extreme confidence (88.5\% vs 75\%) suggests potential value on 'Yes' at current prices. The 13.5 percentage point difference exceeds typical noise thresholds and represents meaningful disagreement. However, this is a relatively niche political prediction market where efficiency may be lower due to limited participant expertise.
+
+%% ============================================
+\section{Research Summary}
+%% ============================================
+
+The United States has made several attempts to establish permanent daylight saving time, with the most significant recent effort being the Sunshine Protection Act. This legislation passed the Senate unanimously in March 2022 but stalled in the House of Representatives and was not enacted. The current system requires biannual clock changes, which affects scheduling, health, and various industries. Historical precedent shows the U.S. briefly implemented permanent daylight saving time during World War I and again from 1942-1945, and attempted year-round DST in 1974-1975 during the energy crisis, though the latter was ended early due to public opposition over safety concerns. The legislative process requires passage by both chambers of Congress and presidential signature. Current status shows renewed bills have been introduced in recent sessions but face complex logistical and political challenges.
+
+\subsection*{Sources}
+\begin{itemize}
+    \item Congress.gov - Official congressional bill tracking and voting records for Sunshine Protection Act and related legislation
+    \item U.S. Department of Transportation - Historical analysis and reports on daylight saving time impacts and past implementations
+    \item National Conference of State Legislatures - Tracking of state-level daylight saving time legislation
+    \item American Academy of Sleep Medicine - Position statements and research on circadian rhythm impacts
+    \item Congressional Research Service - Reports on daylight saving time policy and legislative history
+    \item Federal Trade Commission and Department of Energy - Economic and energy impact studies
+\end{itemize}
+
+%% ============================================
+\section{Persona-Based Recommendations}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{|p{3cm}|p{3cm}|p{8cm}|}
+    \hline
+    \textbf{Persona} & \textbf{Position} & \textbf{Rationale} \\
+    \hline
+        Risk Averse & No position or small 'No' position & The 13.5 percentage point edge on 'Yes' might seem attractive, but this is a niche political predict... \\
+        \hline
+        Risk Seeking & Betting 'Yes' for asymmetric upside & The 'Yes' position offers compelling risk/reward with 7.7x payout potential if the market is indeed ... \\
+        \hline
+        News Driven & Watch list with conditional 'Yes' entry & This market could be highly reactive to energy crises, climate events, or shifts in congressional co... \\
+        \hline
+        Macro Thinker & Potential 'Yes' position as energy policy hedge & Daylight savings legislation connects to broader energy policy trends and could correlate with clima... \\
+        \hline
+        Casual Participant & Small 'Yes' bet for entertainment value & The simple thesis is: 'Everyone hates changing clocks twice a year, and eventually politicians will ... \\
+        \hline
+        Data Analyst & No position - insufficient data quality & While the 13.5 percentage point difference appears statistically significant, political prediction m... \\
+        \hline
+\end{tabular}
+\end{center}
+
+%% ============================================
+\section{Scenario Analysis}
+%% ============================================
+
+    \subsection*{Best Case}
+    Energy crisis or major grid failures during 2025-2026 create political urgency around energy efficiency. Public opinion strongly shifts in favor of permanent DST (60\%+ support) after studies show significant energy savings. A simplified, bipartisan bill emerges focusing solely on permanent DST without complex timezone provisions. Leadership prioritizes the bill during a period of legislative productivity, possibly attached to must-pass energy legislation. Swift passage occurs in both chambers with strong bipartisan support.
+
+    \textbf{Probability Shift:} Yes probability increases to 45-55\% range
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Major energy crisis or blackouts
+            \item Strong bipartisan sponsorship emerges
+            \item Bill attached to must-pass legislation
+            \item Public support polls above 60\%
+            \item Energy savings studies gain mainstream attention
+    \end{itemize}
+
+    \subsection*{Worst Case}
+    Congressional gridlock intensifies with divided government after 2024 elections. Agricultural and transportation lobbies successfully mobilize against permanent DST, citing economic disruption. States begin implementing conflicting timezone policies, creating federal-state tensions that make federal action politically toxic. Leadership actively opposes the measure, and repeated failed votes demonstrate lack of support. Health studies emerge showing negative effects of permanent DST, shifting expert consensus against it.
+
+    \textbf{Probability Shift:} Yes probability drops to 5-10\% range
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Increased political polarization
+            \item Strong industry opposition campaigns
+            \item Negative health studies published
+            \item State-federal conflicts over timezones
+            \item Leadership actively opposes legislation
+    \end{itemize}
+
+    \subsection*{Most Likely}
+    The issue continues to receive periodic attention but lacks the political urgency needed for action. Some states pass resolutions supporting permanent DST, maintaining moderate public interest. A bill is introduced and may pass one chamber (likely House) but stalls in the other due to competing priorities and modest opposition. The measure remains popular in polls but not intensely so, leaving it vulnerable to other legislative priorities. Congress addresses more pressing issues like budget, healthcare, and foreign policy.
+
+    \textbf{Probability Shift:} Yes probability remains in 15-25\% range
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Moderate public support continues
+            \item Partial legislative progress
+            \item Competing priorities dominate agenda
+            \item Industry concerns but not active opposition
+            \item State-level activity maintains visibility
+    \end{itemize}
+
+
+%% ============================================
+\section*{Disclaimer}
+%% ============================================
+
+{\small\textit{This research report is for informational purposes only and does not constitute financial advice, investment advice, or a recommendation to buy or sell any securities or prediction market contracts. Prediction markets involve risk of loss. Past performance does not guarantee future results. Always do your own research and consider your own risk tolerance before participating in any market.}}
+
+\end{document}

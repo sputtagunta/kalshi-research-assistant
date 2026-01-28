@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kalshi Research Report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Kalshi Research Report</h1>
+</header>
+<div class="center">
+<p><span><strong><span style="color: #663399">Market Research
+Report</span></strong></span></p>
+<p><span>Will there be a recession in 2025?</span></p>
+<p><span>Market Reference:
+<code>https://kalshi.com/markets/kxrecssnber/recession/recssnber-25</code></span></p>
+</div>
+<h1 id="market-overview">Market Overview</h1>
+<table>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Resolution Criteria:</strong></td>
+<td style="text-align: left;"><p>If there are two consecutive quarters
+of negative GDP growth in 2024 or 2025, according to the Bureau of
+Economic Analysis, then the market resolves to Yes.</p>
+<p>Additional terms: The market will close at the sooner of the
+occurrence of the event or 8:25 AM ET on the morning of the expected
+release of the Advance Estimate of 2025 Q4 GDP. The market will expire
+at the sooner of the occurrence of the event or the first 10:00 AM ET
+after the release of the Advance Estimate of 2025 Q4 GDP.</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Expiration:</strong></td>
+<td style="text-align: left;">2026-01-31T15:00:00Z</td>
+</tr>
+</tbody>
+</table>
+<h1 id="market-pricing-vs-independent-estimate">Market Pricing vs
+Independent Estimate</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Outcome</strong></th>
+<th style="text-align: center;"><strong>Market Price</strong></th>
+<th style="text-align: center;"><strong>Independent
+Estimate</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span
+style="color: #228B22">Yes</span></td>
+<td style="text-align: center;">0.5%</td>
+<td style="text-align: center;">25.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+style="color: #B22222">No</span></td>
+<td style="text-align: center;">99.5%</td>
+<td style="text-align: center;">75.0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Confidence Level:</strong> Medium</p>
+<h1 id="edge-analysis">Edge Analysis</h1>
+<p>Significant edge appears to exist on the ’Yes’ side. The 24.5
+percentage point difference is enormous and suggests the market is
+either severely mispricing recession risk or operating on
+information/definitions I’m missing. Even accounting for uncertainty in
+my estimates, the market’s 0.5% probability seems unreasonably low
+given: 1) Historical base rates, 2) Current restrictive monetary policy,
+3) Decelerating growth indicators. The market may be treating this as a
+technical definition bet rather than an economic reality assessment.</p>
+<h1 id="research-summary">Research Summary</h1>
+<p>Current U.S. economic conditions show a mixed picture for 2025
+recession risk. The Federal Reserve has been gradually lowering interest
+rates from their peak, with the federal funds rate at 4.5-4.75% as of
+December 2024, down from over 5.25% earlier in the year. Recent GDP
+growth has remained positive but has shown some deceleration, with Q3
+2024 annualized growth at 2.8%. The labor market remains relatively
+strong with unemployment at 4.2% as of November 2024, though job growth
+has slowed from earlier in the year. Inflation has cooled significantly
+from 2022-2023 peaks, with core PCE at 2.8% in October 2024, approaching
+the Fed’s 2% target. However, several risk factors persist including
+elevated interest rates compared to the 2010s, ongoing geopolitical
+tensions, and potential policy uncertainties. Historical context shows
+that recessions are relatively common - the U.S. has experienced 12
+recessions since 1945, averaging roughly one every 6-7 years, with the
+last recession occurring in 2020.</p>
+<h2 class="unnumbered" id="sources">Sources</h2>
+<ul>
+<li><p>Federal Reserve Economic Data (FRED) - St. Louis Fed database for
+economic indicators</p></li>
+<li><p>Bureau of Economic Analysis - Official GDP and inflation
+data</p></li>
+<li><p>Bureau of Labor Statistics - Employment and labor market
+data</p></li>
+<li><p>Federal Reserve meeting minutes and statements - Official Fed
+communications</p></li>
+<li><p>National Bureau of Economic Research - Official U.S. recession
+dating</p></li>
+<li><p>Congressional Budget Office economic projections and
+analysis</p></li>
+<li><p>Federal Reserve Bank regional surveys (Beige Book, regional Fed
+reports)</p></li>
+<li><p>Treasury yield curve data from Federal Reserve and Treasury
+Department</p></li>
+</ul>
+<h1 id="persona-based-recommendations">Persona-Based
+Recommendations</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Persona</strong></th>
+<th style="text-align: left;"><strong>Position</strong></th>
+<th style="text-align: left;"><strong>Rationale</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Risk Averse</td>
+<td style="text-align: left;">Small ’Yes’ position with clear exit
+strategy</td>
+<td style="text-align: left;">The 24.5% edge is substantial enough to
+overcome risk-averse tendencies. At 0.5% market probability,...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Risk Seeking</td>
+<td style="text-align: left;">Aggressive ’Yes’ position leveraging
+maximum edge</td>
+<td style="text-align: left;">This represents exactly the type of
+asymmetric opportunity risk-seekers love - paying 0.5 cents for ...</td>
+</tr>
+<tr>
+<td style="text-align: left;">News Driven</td>
+<td style="text-align: left;">Opportunistic ’Yes’ position with catalyst
+monitoring</td>
+<td style="text-align: left;">The extreme mispricing suggests the market
+isn’t pricing in potential negative catalysts like credit...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Macro Thinker</td>
+<td style="text-align: left;">Strategic ’Yes’ position as portfolio
+hedge</td>
+<td style="text-align: left;">Beyond the direct edge, this position
+serves as valuable portfolio insurance. If recession occurs, t...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Casual Participant</td>
+<td style="text-align: left;">Moderate ’Yes’ position with simple
+thesis</td>
+<td style="text-align: left;">Simple story: Market thinks there’s almost
+zero chance of recession, but history shows recessions ha...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data Analyst</td>
+<td style="text-align: left;">Cautious ’Yes’ position pending definition
+clarity</td>
+<td style="text-align: left;">The quantitative edge is compelling (24.5%
+differential), but the extreme market pricing suggests mi...</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="scenario-analysis">Scenario Analysis</h1>
+<h2 class="unnumbered" id="best-case">Best Case</h2>
+<p>The Federal Reserve’s restrictive monetary policy triggers a credit
+crunch by Q2 2025, leading to sharp business investment decline and
+consumer spending pullback. Corporate earnings deteriorate rapidly as
+high borrowing costs squeeze leveraged companies. Unemployment rises
+from current lows as companies implement layoffs. Two consecutive
+quarters of GDP decline occur in Q2 and Q3 2025, with the BEA confirming
+the recession by late 2025.</p>
+<p><strong>Probability Shift:</strong> Market probability moves from
+0.5% to 15-25% as economic data deteriorates and recession becomes
+apparent</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Fed maintains rates above 5% through Q1 2025</p></li>
+<li><p>Credit spreads widen significantly (&gt;200bps)</p></li>
+<li><p>Unemployment rises above 4.5%</p></li>
+<li><p>Corporate earnings decline 15%+ year-over-year</p></li>
+<li><p>Consumer confidence drops below 80</p></li>
+</ul>
+<h2 class="unnumbered" id="worst-case">Worst Case</h2>
+<p>The economy demonstrates remarkable resilience despite high interest
+rates. Productivity gains from AI and technology offset monetary
+tightening effects. Labor markets remain tight but inflation continues
+declining toward 2% target. The Fed begins cutting rates by mid-2025,
+providing economic support. GDP growth remains positive throughout
+2024-2025, though at slower pace. No consecutive quarters of negative
+growth occur.</p>
+<p><strong>Probability Shift:</strong> Market probability stays near
+current 0.5% levels as economic resilience becomes apparent</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Core PCE inflation drops to 2.5% by Q1 2025</p></li>
+<li><p>Fed begins cutting rates by June 2025</p></li>
+<li><p>Productivity growth exceeds 2% annually</p></li>
+<li><p>Unemployment remains below 4.2%</p></li>
+<li><p>Consumer spending stays robust despite high rates</p></li>
+</ul>
+<h2 class="unnumbered" id="most-likely">Most Likely</h2>
+<p>Economic growth significantly slows but narrowly avoids the technical
+definition of recession. One quarter of negative growth occurs (likely
+Q2 or Q3 2025) but is followed by flat to slightly positive growth,
+preventing two consecutive negative quarters. The economy experiences a
+’growth recession’ with rising unemployment and declining business
+activity, but GDP remains just positive in at least one quarter during
+any two-quarter period.</p>
+<p><strong>Probability Shift:</strong> Market probability rises to 3-8%
+as recession risks become apparent, but technical definition isn’t
+met</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>GDP growth averages 0-1% in 2025</p></li>
+<li><p>One quarter shows negative growth but recovery follows</p></li>
+<li><p>Unemployment rises to 4.5-5.0%</p></li>
+<li><p>Corporate earnings flat to slightly negative</p></li>
+<li><p>Consumer spending growth slows to 0-1%</p></li>
+</ul>
+<h1 class="unnumbered" id="disclaimer">Disclaimer</h1>
+<p><span><em>This research report is for informational purposes only and
+does not constitute financial advice, investment advice, or a
+recommendation to buy or sell any securities or prediction market
+contracts. Prediction markets involve risk of loss. Past performance
+does not guarantee future results. Always do your own research and
+consider your own risk tolerance before participating in any
+market.</em></span></p>
+</body>
+</html>

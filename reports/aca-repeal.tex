@@ -1,0 +1,178 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\geometry{margin=1in}
+
+% Colors
+\definecolor{kalshipurple}{RGB}{102, 51, 153}
+\definecolor{bullgreen}{RGB}{34, 139, 34}
+\definecolor{bearred}{RGB}{178, 34, 34}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{kalshipurple}{Kalshi Research Report}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\small Generated on January 27, 2026}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{kalshipurple}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+% Title
+\begin{center}
+    {\LARGE\bfseries\textcolor{kalshipurple}{Market Research Report}}
+
+    \vspace{0.5cm}
+
+    {\Large ACA Repeal}
+
+    \vspace{0.3cm}
+
+    {\small Market Reference: \texttt{https://kalshi.com/markets/kxacarepeal/aca-repeal/kxacarepeal-26}}
+\end{center}
+
+\vspace{1cm}
+
+%% ============================================
+\section{Market Overview}
+%% ============================================
+
+\begin{tabular}{@{}ll@{}}
+    \textbf{Resolution Criteria:} & \parbox[t]{10cm}{UNKNOWN - Unable to access live market data from Kalshi API to extract exact resolution criteria} \\[0.5em]
+    \textbf{Expiration:} & UNKNOWN - Cannot determine expiration date without accessing market details \\
+\end{tabular}
+
+%% ============================================
+\section{Market Pricing vs Independent Estimate}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{lcc}
+    \toprule
+    \textbf{Outcome} & \textbf{Market Price} & \textbf{Independent Estimate} \\
+    \midrule
+    \textcolor{bullgreen}{Yes} & N/A\% & N/A\% \\
+    \textcolor{bearred}{No} & N/A\% & N/A\% \\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{Confidence Level:} Medium
+
+%% ============================================
+\section{Edge Analysis}
+%% ============================================
+
+Cannot perform meaningful mispricing analysis without current market pricing data. To identify potential edges, I would need: 1) Current betting odds or prediction market prices, 2) Implied probabilities from those prices, 3) Comparison against my 25\%/75\% estimates. My analysis suggests ACA repeal faces significant structural and political obstacles, but without market benchmarks, I cannot determine if this view represents an edge or aligns with consensus.
+
+%% ============================================
+\section{Research Summary}
+%% ============================================
+
+Research on ACA (Affordable Care Act) repeal reveals a complex political and legislative landscape. The ACA, enacted in 2010, has survived multiple repeal attempts including a major effort in 2017 that failed by one Senate vote. Current political dynamics show Republicans generally favor repeal while Democrats oppose it, but the narrow margins in Congress make major healthcare legislation challenging. The ACA has become more popular over time, with approval ratings generally above 50\% in recent polls. Key factors affecting repeal likelihood include: unified government control (historically necessary for major healthcare changes), specific electoral outcomes, Supreme Court decisions on pending cases, and public opinion shifts. The legislation's complexity, with provisions affecting insurance markets, Medicaid expansion, and employer mandates, makes partial rather than full repeal more politically feasible.
+
+\subsection*{Sources}
+\begin{itemize}
+    \item Congressional Budget Office - ACA enrollment and impact reports (2023-2024)
+    \item KFF (Kaiser Family Foundation) - ACA polling data and Medicaid expansion tracking
+    \item Congressional Research Service - Legislative history of ACA repeal attempts
+    \item Supreme Court decisions and case database for ACA-related rulings
+    \item Ballotpedia - Current Congressional composition and election results
+    \item Pew Research Center - Public opinion polling on ACA over time
+    \item National Conference of State Legislatures - State-level ACA implementation data
+\end{itemize}
+
+%% ============================================
+\section{Persona-Based Recommendations}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{|p{3cm}|p{3cm}|p{8cm}|}
+    \hline
+    \textbf{Persona} & \textbf{Position} & \textbf{Rationale} \\
+    \hline
+        Risk Averse & No position - wait for market data & Without market pricing to assess mispricing, this persona would likely avoid speculation. The struct... \\
+        \hline
+        Risk Seeking & Could consider betting on ACA repeal if odds are long & This persona might be attracted to the asymmetric payoff potential if markets are pricing repeal pro... \\
+        \hline
+        News Driven & Wait for specific legislative triggers before positioning & This persona would likely monitor for catalysts like committee hearings, CBO scoring, or leadership ... \\
+        \hline
+        Macro Thinker & Consider healthcare sector correlation trades if taking any position & Rather than direct political betting, this persona might prefer trading healthcare stocks or insuran... \\
+        \hline
+        Casual Participant & Skip this market entirely & This complex political market with unclear timeline and no visible pricing doesn't offer the simple,... \\
+        \hline
+        Data Analyst & No position until market data available for backtesting & This persona would be frustrated by the lack of pricing data to test the 25\% repeal estimate against... \\
+        \hline
+\end{tabular}
+\end{center}
+
+%% ============================================
+\section{Scenario Analysis}
+%% ============================================
+
+    \subsection*{Best Case}
+    Republicans achieve unified control and move quickly on repeal with a viable replacement plan. Economic pressures from healthcare costs create bipartisan urgency. Key moderate Republicans are won over by improved replacement provisions that maintain popular ACA elements while reducing costs. Public opinion shifts as replacement plan addresses concerns about coverage loss.
+
+    \textbf{Probability Shift:} ACA repeal probability increases to 45-55\% if unified GOP control achieved with clear replacement strategy
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Unified Republican control of presidency, House, and Senate
+            \item Detailed replacement plan released with CBO scoring showing coverage maintenance
+            \item Economic crisis creating healthcare cost pressure
+            \item Moderate Republican senators signal support for specific repeal-replace package
+    \end{itemize}
+
+    \subsection*{Worst Case}
+    Democrats maintain or gain control of key institutions. Healthcare costs stabilize or improve under current system. Public support for ACA increases as benefits become more apparent. Republican party moves away from repeal as electoral liability. Legal challenges to any repeal efforts succeed in courts.
+
+    \textbf{Probability Shift:} ACA repeal probability drops to 5-10\% with Democratic control or strengthened ACA public support
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Democratic control of Senate or presidency
+            \item Significant improvement in ACA marketplace stability
+            \item Major healthcare cost reductions under current system
+            \item Supreme Court ruling strengthening ACA legal foundation
+            \item Polling showing 60\%+ support for keeping ACA
+    \end{itemize}
+
+    \subsection*{Most Likely}
+    Political gridlock continues with mixed control of government. Republicans make incremental changes to ACA through reconciliation or administrative actions rather than full repeal. System muddles through with periodic modifications. Full repeal remains politically difficult due to coverage concerns and lack of consensus replacement.
+
+    \textbf{Probability Shift:} ACA repeal probability remains 20-30\% with continued incremental pressure but no major breakthrough
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Divided government continues
+            \item Healthcare costs remain stable but concerning
+            \item Incremental ACA modifications pass instead of repeal
+            \item Public opinion remains mixed on healthcare policy
+            \item No major healthcare crisis forcing dramatic action
+    \end{itemize}
+
+
+%% ============================================
+\section*{Disclaimer}
+%% ============================================
+
+{\small\textit{This research report is for informational purposes only and does not constitute financial advice, investment advice, or a recommendation to buy or sell any securities or prediction market contracts. Prediction markets involve risk of loss. Past performance does not guarantee future results. Always do your own research and consider your own risk tolerance before participating in any market.}}
+
+\end{document}

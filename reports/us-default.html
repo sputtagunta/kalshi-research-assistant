@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kalshi Research Report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Kalshi Research Report</h1>
+</header>
+<div class="center">
+<p><span><strong><span style="color: #663399">Market Research
+Report</span></strong></span></p>
+<p><span>Will the US default on its debt by Dec 31, 2025??</span></p>
+<p><span>Market Reference:
+<code>https://kalshi.com/markets/kxdefault/us-defaults/kxdefault-25dec31</code></span></p>
+</div>
+<h1 id="market-overview">Market Overview</h1>
+<table>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Resolution Criteria:</strong></td>
+<td style="text-align: left;">If the U.S. Department of the Treasury
+announces that the United States Federal Government failed to make a
+scheduled payment on a Treasury note, bond, or bill; or that one of the
+three major credit ratings agencies consider any United States debt in
+any form of default, before 2026, then the market resolves to Yes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Expiration:</strong></td>
+<td style="text-align: left;">2026-01-01T15:00:00Z</td>
+</tr>
+</tbody>
+</table>
+<h1 id="market-pricing-vs-independent-estimate">Market Pricing vs
+Independent Estimate</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Outcome</strong></th>
+<th style="text-align: center;"><strong>Market Price</strong></th>
+<th style="text-align: center;"><strong>Independent
+Estimate</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span
+style="color: #228B22">Yes</span></td>
+<td style="text-align: center;">50.0%</td>
+<td style="text-align: center;">15.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+style="color: #B22222">No</span></td>
+<td style="text-align: center;">50.0%</td>
+<td style="text-align: center;">85.0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Confidence Level:</strong> Medium</p>
+<h1 id="edge-analysis">Edge Analysis</h1>
+<p>Significant edge appears to exist in betting AGAINST default (No
+position). The 35 percentage point gap suggests market is dramatically
+overpricing tail risk. The 50/50 pricing feels like ’maximum
+uncertainty’ pricing rather than fundamental analysis. Historical base
+rates strongly favor resolution, and the economic incentives remain
+overwhelming despite political dysfunction.</p>
+<h1 id="research-summary">Research Summary</h1>
+<p>The US debt ceiling is a critical factor in potential default
+scenarios. As of late 2024, the debt ceiling was suspended until January
+1, 2025, after which Treasury will need to use extraordinary measures to
+avoid breaching the limit. Historical precedent shows the US has never
+defaulted on its debt obligations, though several debt ceiling crises
+have brought the country close to technical default (notably 2011, 2013,
+and 2023). The Treasury’s extraordinary measures typically provide
+several months of additional borrowing capacity, but the exact duration
+depends on government revenues and expenditures. Credit rating agencies
+have previously downgraded US debt during debt ceiling standoffs -
+S&amp;P downgraded the US from AAA to AA+ in August 2011 and maintained
+this rating through 2024. Moody’s and Fitch have issued negative
+outlooks during debt ceiling crises but maintained their AAA ratings,
+though both have warned of potential downgrades if political dysfunction
+continues. The resolution criteria would be triggered either by an
+actual missed payment or a credit rating agency declaring any form of
+default.</p>
+<h2 class="unnumbered" id="sources">Sources</h2>
+<ul>
+<li><p>Congressional Budget Office - Debt ceiling analysis reports and
+extraordinary measures documentation</p></li>
+<li><p>US Treasury Department - Monthly treasury statements and debt
+ceiling historical information</p></li>
+<li><p>S&amp;P Global Ratings - US sovereign credit rating reports and
+methodology</p></li>
+<li><p>Moody’s Investors Service - US government credit opinions and
+rating actions</p></li>
+<li><p>Fitch Ratings - US sovereign rating reports and surveillance
+notes</p></li>
+<li><p>Public Law 118-5 (Fiscal Responsibility Act of 2023) -
+Congressional legislation</p></li>
+<li><p>Government Accountability Office - Reports on debt ceiling
+processes and risks</p></li>
+<li><p>Federal Reserve Economic Data - Historical debt and fiscal
+data</p></li>
+</ul>
+<h1 id="persona-based-recommendations">Persona-Based
+Recommendations</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Persona</strong></th>
+<th style="text-align: left;"><strong>Position</strong></th>
+<th style="text-align: left;"><strong>Rationale</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Risk Averse</td>
+<td style="text-align: left;">Moderate ’No’ position (betting against
+default)</td>
+<td style="text-align: left;">The 35 percentage point edge combined with
+strong historical precedent creates a high-confidence opp...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Risk Seeking</td>
+<td style="text-align: left;">Small ’Yes’ position as contrarian
+hedge</td>
+<td style="text-align: left;">While the base case strongly favors
+resolution, the current political environment shows unprecedente...</td>
+</tr>
+<tr>
+<td style="text-align: left;">News Driven</td>
+<td style="text-align: left;">Dynamic positioning around debt ceiling
+negotiations</td>
+<td style="text-align: left;">This market will be highly sensitive to
+political news flow, congressional statements, and Treasury ...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Macro Thinker</td>
+<td style="text-align: left;">’No’ position as part of broader stability
+thesis</td>
+<td style="text-align: left;">US debt default would trigger global
+financial system collapse, making it the ultimate ’too big to f...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Casual Participant</td>
+<td style="text-align: left;">Simple ’No’ position - bet America doesn’t
+implode</td>
+<td style="text-align: left;">This is straightforward: despite all the
+political drama, America has never defaulted on its debt an...</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data Analyst</td>
+<td style="text-align: left;">Cautious ’No’ position with quantified
+sizing</td>
+<td style="text-align: left;">Historical base rate shows 100% resolution
+record across dozens of debt ceiling episodes. The 35 per...</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="scenario-analysis">Scenario Analysis</h1>
+<h2 class="unnumbered" id="best-case">Best Case</h2>
+<p>Political leaders recognize the catastrophic economic consequences
+early and negotiate a clean debt ceiling increase or suspension by
+mid-2025. Treasury maintains full operational capacity without needing
+extraordinary measures. Market confidence remains high throughout the
+process, and the political theater is minimal compared to previous
+cycles.</p>
+<p><strong>Probability Shift:</strong> No resolution probability
+increases to 95%+. Market recognizes this was never really in doubt once
+adults took control of negotiations.</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Early bipartisan statements about avoiding default</p></li>
+<li><p>Treasury Secretary provides clear timeline and
+assurances</p></li>
+<li><p>Congressional leadership schedules vote well before
+X-date</p></li>
+<li><p>Business community applies coordinated pressure for clean
+resolution</p></li>
+</ul>
+<h2 class="unnumbered" id="worst-case">Worst Case</h2>
+<p>Severe political dysfunction coincides with divided government and
+razor-thin margins. Negotiations deadlock past the X-date, Treasury
+exhausts extraordinary measures, and a technical default occurs on a
+scheduled payment. However, this lasts only 1-3 days before political
+reality forces resolution, but triggers rating agency downgrade.</p>
+<p><strong>Probability Shift:</strong> Yes resolution probability could
+spike to 30-40% during peak crisis, then crash back down once
+resolved</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Hardline factions refuse to compromise on
+spending/revenue</p></li>
+<li><p>Miscalculation of Treasury’s extraordinary measures
+timeline</p></li>
+<li><p>External crisis diverts political attention at critical
+moment</p></li>
+<li><p>Rating agencies issue ultimatum that forces political
+hands</p></li>
+</ul>
+<h2 class="unnumbered" id="most-likely">Most Likely</h2>
+<p>Familiar debt ceiling theater plays out with brinksmanship extending
+to within weeks of X-date. Treasury employs extraordinary measures for
+several months while Congress negotiates. Last-minute deal emerges
+combining debt ceiling increase with modest spending reforms, similar to
+previous resolutions. Some market volatility but no actual default.</p>
+<p><strong>Probability Shift:</strong> No resolution probability settles
+around 90-92% once pattern recognition kicks in</p>
+<p><strong>Key Triggers:</strong></p>
+<ul>
+<li><p>Treasury announces extraordinary measures deployment</p></li>
+<li><p>Congressional negotiations begin showing progress under market
+pressure</p></li>
+<li><p>Business leaders and economists warn of consequences</p></li>
+<li><p>Polling shows public opposes default across party lines</p></li>
+</ul>
+<h1 class="unnumbered" id="disclaimer">Disclaimer</h1>
+<p><span><em>This research report is for informational purposes only and
+does not constitute financial advice, investment advice, or a
+recommendation to buy or sell any securities or prediction market
+contracts. Prediction markets involve risk of loss. Past performance
+does not guarantee future results. Always do your own research and
+consider your own risk tolerance before participating in any
+market.</em></span></p>
+</body>
+</html>

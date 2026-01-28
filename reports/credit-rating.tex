@@ -1,0 +1,179 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\geometry{margin=1in}
+
+% Colors
+\definecolor{kalshipurple}{RGB}{102, 51, 153}
+\definecolor{bullgreen}{RGB}{34, 139, 34}
+\definecolor{bearred}{RGB}{178, 34, 34}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{kalshipurple}{Kalshi Research Report}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\small Generated on January 27, 2026}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{kalshipurple}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+% Title
+\begin{center}
+    {\LARGE\bfseries\textcolor{kalshipurple}{Market Research Report}}
+
+    \vspace{0.5cm}
+
+    {\Large Will the U.S. credit rating be downgraded by December 31, 2025?}
+
+    \vspace{0.3cm}
+
+    {\small Market Reference: \texttt{https://kalshi.com/markets/kxcreditrating/us-credit-rating-downgrade/kxcreditrating-25dec31b}}
+\end{center}
+
+\vspace{1cm}
+
+%% ============================================
+\section{Market Overview}
+%% ============================================
+
+\begin{tabular}{@{}ll@{}}
+    \textbf{Resolution Criteria:} & \parbox[t]{10cm}{If U.S. credit is downgraded by any of the three major credit ratings agencies beginning May 21, 2025 and by December 31, 2025, then the market resolves to Yes.} \\[0.5em]
+    \textbf{Expiration:} & 2026-01-01T15:00:00Z \\
+\end{tabular}
+
+%% ============================================
+\section{Market Pricing vs Independent Estimate}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{lcc}
+    \toprule
+    \textbf{Outcome} & \textbf{Market Price} & \textbf{Independent Estimate} \\
+    \midrule
+    \textcolor{bullgreen}{Yes} & 50.0\% & 35.0\% \\
+    \textcolor{bearred}{No} & 50.0\% & 65.0\% \\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{Confidence Level:} Medium
+
+%% ============================================
+\section{Edge Analysis}
+%% ============================================
+
+A potential edge exists in fading the 'Yes' outcome (downgrade) at 50\% implied probability. The 15 percentage point difference suggests the market may be overly pessimistic, possibly influenced by recent media coverage of fiscal issues and the fresh memory of Fitch's 2023 downgrade. The analysis suggests downgrade probability is closer to 35\%, making the current 50\% pricing attractive to fade. However, this edge assumes our fundamental analysis correctly weighs the competing factors.
+
+%% ============================================
+\section{Research Summary}
+%% ============================================
+
+The U.S. currently holds AAA ratings from Moody's and Fitch, while S\&P rates it AA+ (downgraded in 2011). Recent debt ceiling negotiations and rising debt levels have prompted warnings from rating agencies. Moody's changed its outlook to negative in November 2023, citing fiscal deficits and political polarization. Fitch had previously placed the U.S. on negative watch in May 2023 before downgrading in August 2023. Key factors include the debt-to-GDP ratio (currently around 120\%), ongoing fiscal deficits projected at 5-7\% of GDP, and political challenges in addressing fiscal sustainability. Historical precedent exists with S\&P's 2011 downgrade following debt ceiling brinkmanship. The timeline from May 2025 onwards coincides with potential debt ceiling discussions and fiscal policy debates.
+
+\subsection*{Sources}
+\begin{itemize}
+    \item Moody's Investors Service - U.S. sovereign rating reports and outlook changes
+    \item Fitch Ratings - U.S. sovereign credit analysis and rating history
+    \item S\&P Global Ratings - Historical U.S. sovereign rating decisions and methodology
+    \item Congressional Budget Office - Budget and economic outlook reports 2023-2024
+    \item U.S. Treasury - Debt statistics and fiscal data
+    \item Federal Reserve - Economic projections and monetary policy statements
+    \item Government Accountability Office - Fiscal outlook reports
+    \item Reuters, Bloomberg, Wall Street Journal - Recent coverage of rating agency statements
+\end{itemize}
+
+%% ============================================
+\section{Persona-Based Recommendations}
+%% ============================================
+
+\begin{center}
+\begin{tabular}{|p{3cm}|p{3cm}|p{8cm}|}
+    \hline
+    \textbf{Persona} & \textbf{Position} & \textbf{Rationale} \\
+    \hline
+        Risk Averse & No position - wait for better pricing & While the 'No' outcome appears underpriced, the 15\% edge may not provide sufficient cushion given th... \\
+        \hline
+        Risk Seeking & Small 'Yes' contrarian bet despite overpricing & A risk-seeking participant might actually consider the overpriced 'Yes' outcome for its asymmetric p... \\
+        \hline
+        News Driven & Monitor but delay entry pending catalysts & This persona would likely want to wait for specific catalysts rather than betting on current pricing... \\
+        \hline
+        Macro Thinker & 'No' position as part of broader U.S. stability thesis & This aligns with a broader view that U.S. institutional strength remains intact despite fiscal conce... \\
+        \hline
+        Casual Participant & 'No' - bet on America staying strong & Simple, memorable thesis: 'America has been through worse and maintained its credit rating.' Easy to... \\
+        \hline
+        Data Analyst & No position - insufficient quantitative edge & The 15\% edge calculation relies heavily on qualitative assessment of 'institutional inertia' and 'st... \\
+        \hline
+\end{tabular}
+\end{center}
+
+%% ============================================
+\section{Scenario Analysis}
+%% ============================================
+
+    \subsection*{Best Case}
+    Economic growth accelerates due to productivity gains from AI adoption, significantly improving debt-to-GDP trajectory. Bipartisan fiscal reforms emerge after 2024 elections, including modest entitlement adjustments and revenue enhancements. Rating agencies explicitly acknowledge improved fiscal outlook and economic fundamentals, with no downgrade discussions. Market probability drops to 20-25\%.
+
+    \textbf{Probability Shift:} Downgrade probability falls to 20-25\% as fiscal trajectory improves and political dysfunction decreases
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item GDP growth consistently above 3\% through 2025
+            \item Bipartisan budget deal with meaningful deficit reduction
+            \item Rating agencies issue positive outlook statements
+            \item Debt-to-GDP ratio stabilizes or begins declining
+    \end{itemize}
+
+    \subsection*{Worst Case}
+    Debt ceiling crisis in 2025 creates prolonged political brinksmanship with technical default risk. Economic recession emerges, worsening fiscal metrics while political gridlock prevents any meaningful reforms. One rating agency downgrades preemptively, creating pressure on others to follow. Geopolitical tensions strain dollar's reserve currency status. Market probability rises to 70-75\%.
+
+    \textbf{Probability Shift:} Downgrade probability rises to 70-75\% as political dysfunction peaks and fiscal metrics deteriorate rapidly
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Extended debt ceiling standoff lasting over 30 days
+            \item U.S. enters recession with 2+ consecutive quarters of negative growth
+            \item One major rating agency downgrades, creating precedent
+            \item Significant decline in Treasury auction demand
+            \item Federal interest expense exceeds 20\% of revenues
+    \end{itemize}
+
+    \subsection*{Most Likely}
+    Status quo continues with modest economic growth and persistent but manageable fiscal challenges. Debt ceiling gets raised after typical political theater but no actual default risk. Rating agencies maintain current ratings but issue cautionary language about long-term fiscal trajectory. No major reforms but no crisis either - the familiar pattern of 'muddling through' continues. Market probability stays near current levels or drifts slightly lower.
+
+    \textbf{Probability Shift:} Downgrade probability remains 35-45\% as fundamental conditions persist without major positive or negative catalysts
+
+    \textbf{Key Triggers:}
+    \begin{itemize}
+            \item Debt ceiling resolved within 2-4 weeks of deadline
+            \item GDP growth remains 2-2.5\% range
+            \item Rating agencies issue routine reviews with mixed language
+            \item Federal deficit stays in \$1.5-2T range
+            \item Political landscape remains polarized but functional
+    \end{itemize}
+
+
+%% ============================================
+\section*{Disclaimer}
+%% ============================================
+
+{\small\textit{This research report is for informational purposes only and does not constitute financial advice, investment advice, or a recommendation to buy or sell any securities or prediction market contracts. Prediction markets involve risk of loss. Past performance does not guarantee future results. Always do your own research and consider your own risk tolerance before participating in any market.}}
+
+\end{document}
