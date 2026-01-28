@@ -21,7 +21,7 @@
         .stats { margin: 20px 0; color: #888; }
         .reports-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 16px;
         }
         .report-card {
@@ -33,6 +33,7 @@
             text-decoration: none;
             color: inherit;
             display: block;
+            position: relative;
         }
         .report-card:hover {
             transform: translateY(-3px);
@@ -53,6 +54,18 @@
         .tag.crypto { background: #fff5e6; color: #996633; }
         .tag.economics { background: #f5e6ff; color: #663399; }
         .tag.intl { background: #e6ffff; color: #339999; }
+        .edge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            font-size: 0.8em;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+        .edge.yes { background: #d4edda; color: #155724; }
+        .edge.no { background: #f8d7da; color: #721c24; }
+        .edge.neutral { background: #e9ecef; color: #6c757d; }
         footer {
             text-align: center;
             margin-top: 50px;
@@ -62,6 +75,13 @@
             font-size: 0.85em;
         }
         footer a { color: var(--purple); }
+        .legend {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 0.85em;
+            color: #666;
+        }
+        .legend span { margin: 0 10px; }
     </style>
 </head>
 <body>
@@ -71,111 +91,138 @@
         <p class="stats">21 reports available</p>
     </header>
 
+    <div class="legend">
+        <span><strong>Edge:</strong></span>
+        <span style="color:#155724">YES +X%</span> = Buy Yes is underpriced |
+        <span style="color:#721c24">NO +X%</span> = Buy No is underpriced
+    </div>
+
     <div class="reports-grid">
-        <a href="reports/google-breakup.html" class="report-card">
-            <h2>Google Breakup</h2>
-            <p>DOJ antitrust case and breakup likelihood</p>
-            <span class="tag politics">Politics</span>
-        </a>
         <a href="reports/new-tariffs.html" class="report-card">
+            <span class="edge yes">YES +41.5%</span>
             <h2>New Tariffs</h2>
             <p>Trump executive action on tariffs</p>
             <span class="tag politics">Politics</span>
         </a>
-        <a href="reports/h5n1-cases.html" class="report-card">
-            <h2>H5N1 Bird Flu</h2>
-            <p>Bird flu spread and case predictions</p>
-            <span class="tag health">Health</span>
-        </a>
-        <a href="reports/panama-canal.html" class="report-card">
-            <h2>Panama Canal</h2>
-            <p>US retaking control of canal</p>
-            <span class="tag intl">International</span>
-        </a>
-        <a href="reports/china-llm.html" class="report-card">
-            <h2>Chinese LLM</h2>
-            <p>Chinese AI lab producing best LLM</p>
-            <span class="tag tech">Technology</span>
-        </a>
-        <a href="reports/social-media-ban.html" class="report-card">
-            <h2>Social Media Ban</h2>
-            <p>US banning social media for children</p>
-            <span class="tag politics">Politics</span>
-        </a>
-        <a href="reports/25th-amendment.html" class="report-card">
-            <h2>25th Amendment</h2>
-            <p>Presidential removal probability</p>
-            <span class="tag politics">Politics</span>
-        </a>
-        <a href="reports/tesla-gas-car.html" class="report-card">
-            <h2>Tesla Gas Car</h2>
-            <p>Tesla producing gas-powered vehicle</p>
-            <span class="tag tech">Technology</span>
-        </a>
-        <a href="reports/kraken-ipo.html" class="report-card">
-            <h2>Kraken IPO</h2>
-            <p>Kraken crypto exchange going public</p>
-            <span class="tag crypto">Crypto</span>
-        </a>
-        <a href="reports/ai-pause.html" class="report-card">
-            <h2>AI Research Pause</h2>
-            <p>Major AI labs pausing for safety</p>
-            <span class="tag tech">Technology</span>
-        </a>
-        <a href="reports/imf-recession.html" class="report-card">
-            <h2>IMF Recession</h2>
-            <p>IMF declaring global recession</p>
-            <span class="tag economics">Economics</span>
-        </a>
-        <a href="reports/nj-drones.html" class="report-card">
-            <h2>NJ Drones</h2>
-            <p>New Jersey drone sightings</p>
-            <span class="tag politics">Politics</span>
-        </a>
         <a href="reports/nber-recession.html" class="report-card">
+            <span class="edge yes">YES +24.5%</span>
             <h2>NBER Recession</h2>
             <p>US recession declaration by NBER</p>
             <span class="tag economics">Economics</span>
         </a>
-        <a href="reports/meta-ceo.html" class="report-card">
-            <h2>Meta CEO</h2>
-            <p>Zuckerberg leaving Meta</p>
-            <span class="tag tech">Technology</span>
-        </a>
-        <a href="reports/credit-rating.html" class="report-card">
-            <h2>US Credit Rating</h2>
-            <p>US credit rating downgrade</p>
-            <span class="tag economics">Economics</span>
-        </a>
         <a href="reports/daylight-savings.html" class="report-card">
+            <span class="edge yes">YES +13.5%</span>
             <h2>Daylight Savings</h2>
             <p>Permanent daylight savings time</p>
             <span class="tag politics">Politics</span>
         </a>
-        <a href="reports/aca-repeal.html" class="report-card">
-            <h2>ACA Repeal</h2>
-            <p>Obamacare repeal probability</p>
+        <a href="reports/ai-pause.html" class="report-card">
+            <span class="edge yes">YES +11.5%</span>
+            <h2>AI Research Pause</h2>
+            <p>Major AI labs pausing for safety</p>
+            <span class="tag tech">Technology</span>
+        </a>
+        <a href="reports/social-media-ban.html" class="report-card">
+            <span class="edge yes">YES +6.5%</span>
+            <h2>Social Media Ban</h2>
+            <p>US banning social media for children</p>
             <span class="tag politics">Politics</span>
         </a>
-        <a href="reports/usps-privatize.html" class="report-card">
-            <h2>USPS Privatization</h2>
-            <p>Privatizing US Postal Service</p>
+        <a href="reports/google-breakup.html" class="report-card">
+            <span class="edge neutral">FAIR</span>
+            <h2>Google Breakup</h2>
+            <p>DOJ antitrust case and breakup likelihood</p>
             <span class="tag politics">Politics</span>
         </a>
-        <a href="reports/us-default.html" class="report-card">
-            <h2>US Default</h2>
-            <p>US government default on debt</p>
-            <span class="tag economics">Economics</span>
+        <a href="reports/abraham-accords-saudi.html" class="report-card">
+            <span class="edge neutral">FAIR</span>
+            <h2>Abraham Accords Saudi</h2>
+            <p>Saudi Arabia joining Abraham Accords</p>
+            <span class="tag intl">International</span>
+        </a>
+        <a href="reports/kraken-ipo.html" class="report-card">
+            <span class="edge neutral">FAIR</span>
+            <h2>Kraken IPO</h2>
+            <p>Kraken crypto exchange going public</p>
+            <span class="tag crypto">Crypto</span>
         </a>
         <a href="reports/palestine-recognition.html" class="report-card">
+            <span class="edge neutral">FAIR</span>
             <h2>Palestine Recognition</h2>
             <p>US recognizing Palestinian state</p>
             <span class="tag intl">International</span>
         </a>
-        <a href="reports/abraham-accords-saudi.html" class="report-card">
-            <h2>Abraham Accords Saudi</h2>
-            <p>Saudi Arabia joining Abraham Accords</p>
+        <a href="reports/imf-recession.html" class="report-card">
+            <span class="edge neutral">FAIR</span>
+            <h2>IMF Recession</h2>
+            <p>IMF declaring global recession</p>
+            <span class="tag economics">Economics</span>
+        </a>
+        <a href="reports/credit-rating.html" class="report-card">
+            <span class="edge no">NO +15%</span>
+            <h2>US Credit Rating</h2>
+            <p>US credit rating downgrade</p>
+            <span class="tag economics">Economics</span>
+        </a>
+        <a href="reports/25th-amendment.html" class="report-card">
+            <span class="edge no">NO +21.5%</span>
+            <h2>25th Amendment</h2>
+            <p>Presidential removal probability</p>
+            <span class="tag politics">Politics</span>
+        </a>
+        <a href="reports/china-llm.html" class="report-card">
+            <span class="edge no">NO +25%</span>
+            <h2>Chinese LLM</h2>
+            <p>Chinese AI lab producing best LLM</p>
+            <span class="tag tech">Technology</span>
+        </a>
+        <a href="reports/panama-canal.html" class="report-card">
+            <span class="edge no">NO +30.5%</span>
+            <h2>Panama Canal</h2>
+            <p>US retaking control of canal</p>
             <span class="tag intl">International</span>
+        </a>
+        <a href="reports/nj-drones.html" class="report-card">
+            <span class="edge no">NO +35%</span>
+            <h2>NJ Drones</h2>
+            <p>New Jersey drone sightings</p>
+            <span class="tag politics">Politics</span>
+        </a>
+        <a href="reports/us-default.html" class="report-card">
+            <span class="edge no">NO +35%</span>
+            <h2>US Default</h2>
+            <p>US government default on debt</p>
+            <span class="tag economics">Economics</span>
+        </a>
+        <a href="reports/usps-privatize.html" class="report-card">
+            <span class="edge no">NO +35%</span>
+            <h2>USPS Privatization</h2>
+            <p>Privatizing US Postal Service</p>
+            <span class="tag politics">Politics</span>
+        </a>
+        <a href="reports/meta-ceo.html" class="report-card">
+            <span class="edge no">NO +45%</span>
+            <h2>Meta CEO</h2>
+            <p>Zuckerberg leaving Meta</p>
+            <span class="tag tech">Technology</span>
+        </a>
+        <a href="reports/tesla-gas-car.html" class="report-card">
+            <span class="edge no">NO +48%</span>
+            <h2>Tesla Gas Car</h2>
+            <p>Tesla producing gas-powered vehicle</p>
+            <span class="tag tech">Technology</span>
+        </a>
+        <a href="reports/h5n1-cases.html" class="report-card">
+            <span class="edge neutral">N/A</span>
+            <h2>H5N1 Bird Flu</h2>
+            <p>Bird flu spread and case predictions</p>
+            <span class="tag health">Health</span>
+        </a>
+        <a href="reports/aca-repeal.html" class="report-card">
+            <span class="edge neutral">N/A</span>
+            <h2>ACA Repeal</h2>
+            <p>Obamacare repeal probability</p>
+            <span class="tag politics">Politics</span>
         </a>
     </div>
 
